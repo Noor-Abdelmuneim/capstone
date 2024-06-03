@@ -1,7 +1,23 @@
+import Cards from "../components/Cards";
+
 const CardsPage = () => {
   return (
-    <div>
-      <h1>Cards Page</h1>
+    <div className="startups-container">
+      <h1>Startups In Iraqi Market</h1>
+      <div className="cards">
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+        <Cards />
+      </div>
     </div>
   );
 };

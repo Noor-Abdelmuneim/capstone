@@ -12,12 +12,12 @@ const Navbar = () => {
           <Link to="/startups">Start-ups</Link>
         </li>
         <li>
-          <Link to="/investors">Investors</Link>
+          <Link to="/investors">Investors & Incubators</Link>
         </li>
         <li>
-          <Link to="/incubators">Incubators</Link>
+          <Link to="/contact">Contact us</Link>
         </li>
-        <Button variant="contained" sx={{ margin: "10px  10px 10px 950px" }}>
+        <Button variant="contained" sx={{ margin: "10px  10px 10px 850px" }}>
           Login
         </Button>
         <Button variant="contained" color="success">

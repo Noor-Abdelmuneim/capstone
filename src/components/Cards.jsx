@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import companypic from "./Assets/Building-cuate.png";
 
-export default function Cards({ prod }) {
+export default function Cards() {
   return (
     <div className="card-wrapper">
       <div className="card-container">
@@ -12,7 +12,7 @@ export default function Cards({ prod }) {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi,
           voluptate.
         </p>
-        <Link to={`products/${prod}`}>
+        <Link to="/singlecard">
           <button>Explore More</button>
         </Link>
       </div>
