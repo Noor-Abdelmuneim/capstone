@@ -1,20 +1,21 @@
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#startups">Start-ups</a>
+          <Link to="/startups">Start-ups</Link>
         </li>
         <li>
-          <a href="#investors">Investors</a>
+          <Link to="/investors">Investors</Link>
         </li>
         <li>
-          <a href="#incubators">Incubators</a>
+          <Link to="/incubators">Incubators</Link>
         </li>
         <Button variant="contained" sx={{ margin: "10px  10px 10px 950px" }}>
           Login

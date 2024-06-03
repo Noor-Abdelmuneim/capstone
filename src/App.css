@@ -1,9 +1,11 @@
+/* Navbar */
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
 }
 
 li {
@@ -17,19 +19,21 @@ li:last-child {
 
 li a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #04aa6d;
 }
 
 .active {
   background-color: #04aa6d;
 }
+
+/* hero section */
 
 .hero-container {
   position: relative;
@@ -50,4 +54,57 @@ li a:hover:not(.active) {
   height: auto;
   display: block;
   z-index: 0;
+}
+
+/* Cards */
+
+.card-container {
+  width: 250px;
+  height: 350px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr;
+}
+.card-container img {
+  margin-left: 20%;
+}
+.card-container button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.card-container button:hover {
+  background-color: darkblue;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Startups page */
+
+.startups-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.startups-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
 }
