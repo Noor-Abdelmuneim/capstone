@@ -17,12 +17,18 @@ const Navbar = () => {
         <li>
           <Link to="/contact">Contact us</Link>
         </li>
-        <Button variant="contained" sx={{ margin: "10px  10px 10px 850px" }}>
-          Login
-        </Button>
-        <Button variant="contained" color="success">
+        <div className="nav-btns" style={{float:"right"}}>
+        <Link to="/loginpage">
+          <Button variant="contained" >
+            Login
+          </Button>
+        </Link>
+        <Link to="/signup">
+        <Button variant="contained" color="success"sx={{margin:"10px"}}>
           Sign Up
         </Button>
+        </Link>
+        </div>
       </ul>
     </>
   );

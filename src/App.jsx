@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Investors from "./pages/Investors";
 import CardsPage from "./pages/CardsPage";
 import Contact from "./pages/Contact";
+import LoginPage from "./pages/LoginPage";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/investors" element={<Investors />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cardspage" element={<CardsPage />} />
+          <Route path="/loginpage" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
     </div>
