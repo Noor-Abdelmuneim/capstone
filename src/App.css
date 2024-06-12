@@ -38,6 +38,8 @@ li a:hover:not(.active) {
 .hero-container {
   position: relative;
   text-align: left;
+  height: 100vh;
+  /* background-color: #9bbdab; */
 }
 
 .text-container {
@@ -91,6 +93,11 @@ li a:hover:not(.active) {
 }
 
 /* Startups page */
+.main-container {
+  height: 100vh;
+  margin-top: 70px;
+  
+}
 
 .startups-container {
   text-align: center;
@@ -107,19 +114,19 @@ li a:hover:not(.active) {
   margin-top: 100px;
 }
 
-.main-container {
-  height: 100vh;
-  margin-top: 70px;
-}
+
+
+
+
 
 /* footer */
 .footer {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
-  display: flex; /* Add flex display */
-  justify-content: space-between; /* Align items horizontally */
-  align-items: center; /* Align items vertically */
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
 }
 
 .footer-Logo {
@@ -128,9 +135,9 @@ li a:hover:not(.active) {
 }
 
 .footer-info {
-  margin: 0; /* Remove margin */
-  text-align: right; /* Align text to the right */
-  padding-right: 50px; /* Adjust padding */
+  margin: 0;
+  text-align: right;
+  padding-right: 50px;
 }
 
 .footer-info a {
@@ -143,9 +150,21 @@ li a:hover:not(.active) {
   color: #ddd;
 }
 
-.paragraph-footer {
-  margin: 20px;
+.pargraph-footer{
+  margin-top: 90px;
+  font-size: 15px;
 }
+
+.button-with-image {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* .paragraph-footer {
+  
+}  */
 
 
 /* Investors page */
@@ -163,5 +182,16 @@ li a:hover:not(.active) {
   display: flex;
   justify-content: center;
   margin: 30px;
+}
+
+
+
+/* CONTACT PAGE */
+
+.contact-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
 }
 
