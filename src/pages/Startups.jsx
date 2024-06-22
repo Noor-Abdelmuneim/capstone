@@ -14,7 +14,6 @@ const Startups = () => {
           <Cards />
           <Cards />
           <Cards />
-          <Cards />
         </div>
         <div className="startups-container">
           <Link to="/cardspage">

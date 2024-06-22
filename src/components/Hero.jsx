@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
-import building from "./Assets/building.jpg";
-import Button from "@mui/material/Button";
+import building from "./Assets/Building.png";
 
 const Hero = () => {
   return (
     <>
       <div className="hero-container">
         <div className="text-container">
-          <h1>Your First Choice For Investing In Start-ups</h1>
-          <p>Discover The Start-ups In The Iraqi Market</p>
+          <h1>Invest in Iraq's Future: Discover Startup Opportunities</h1>
+          <br />
+          <p>
+            Iraq Startup Hub connects innovative startups with visionary
+            investors seeking impactful opportunities in Iraq's burgeoning
+            market.
+          </p>
+          <br />
           <Link to="/startups">
-            <Button variant="contained" color="success">
-              View More
-            </Button>
+            <button className={"button-18"}>View More</button>
           </Link>
         </div>
         <img src={building} alt="building" className="hero-image" />
