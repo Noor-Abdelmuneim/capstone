@@ -26,54 +26,61 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li
-          className={`nav-item ${location.pathname.startsWith("/startups") ? "active" : ""
-            }`}
+          className={`nav-item ${
+            location.pathname.startsWith("/startups") ? "active" : ""
+          }`}
         >
           <Link to="/startups">Start-ups</Link>
         </li>
         <li
-          className={`nav-item ${location.pathname.startsWith("/investors") ? "active" : ""
-            }`}
+          className={`nav-item ${
+            location.pathname.startsWith("/investors") ? "active" : ""
+          }`}
         >
           <Link to="/investors">Investors & Incubators</Link>
         </li>
         <li
-          className={`nav-item ${location.pathname === "/contact" ? "active" : ""
-            }`}
+          className={`nav-item ${
+            location.pathname === "/contact" ? "active" : ""
+          }`}
         >
           <Link to="/contact">Contact us</Link>
         </li>
       </ul>
       <div className={`nav-btns ${isOpen ? "active" : ""}`}>
-      <Stack spacing={1.5} direction="row">
-        <Link to="/loginpage">
-          <Button variant="contained" sx={{
-            fontFamily:"",
-            borderRadius: "30px",
-            paddingLeft: "20px",
-            paddingRight: "20px",
-            backgroundColor: "#0d47a1",
-            color: "#ffffff",
-            boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.1)",
-            '&:hover': {
-              backgroundColor: "#1565c0",
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-            },
-          }}>Login</Button>
-        </Link>
-        <Link to="/signup">
-          <Button variant="outlined" sx={{
-            borderRadius: "30px",
-            paddingLeft: "20px",
-            paddingRight: "20px",
-            color: "#black",
-            boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.1)",
-            '&:hover': {
-              backgroundColor: "#007bff3",
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-            },
-          }}>Sign Up</Button>
-        </Link>
+        <Stack spacing={1} direction="row">
+          <Link to="/loginpage">
+            <Button
+              variant="outlined"
+              sx={{
+                borderRadius: "8px",
+                paddingLeft: "30px",
+                paddingRight: "30px",
+                "&:hover": {
+                  backgroundColor: "#007bff3",
+                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                },
+              }}
+            >
+              Login
+            </Button>
+          </Link>
+          <Link to="/signup">
+            <Button
+              variant="contained"
+              sx={{
+                borderRadius: "8px",
+                paddingLeft: "30px",
+                paddingRight: "30px",
+                "&:hover": {
+                  backgroundColor: "#007bff3",
+                  boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                },
+              }}
+            >
+              Sign Up
+            </Button>
+          </Link>
         </Stack>
       </div>
     </nav>

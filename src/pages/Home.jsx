@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Startups  />
+      <Startups />
       {/* <Investors /> */}
       <Contact />
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

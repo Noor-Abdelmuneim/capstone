@@ -42,8 +42,6 @@
   font-weight: bold;
 }
 
-
-
 /* hero section */
 
 .hero-container {
@@ -51,30 +49,29 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  max-width: 1600px;
+  margin: auto;
 }
 
 .text-container {
-  position: relative; 
-  z-index: 1;
-  font-size: large;
-  text-align: center; 
+  max-width: 100%;
+  margin: auto;
 }
-.header-text{
-  font-size: xx-large;
-  margin-bottom: 1rem;
-  text-align: center;
+.text-container h1 {
+  font-size: 4em;
+  margin: 0 0 45px 10px;
+}
+.text-container p {
+  font-size: 2em;
+  margin: 0 0 45px 10px;
 }
 
 .hero-image {
-  width: 550px;
-  height: 550px;
+  width: 680px;
+  height: 680px;
   border-radius: 50%;
-  margin-left: auto; 
-  margin-right: 5%; 
-  margin-top: 9%;
-  align-self: flex-start; 
+  margin: auto;
 }
-
 
 /* Cards */
 
@@ -116,6 +113,7 @@
 .main-container {
   height: 100vh;
   margin-top: 70px;
+  max-width: 1600px;
 }
 
 .startups-container {
@@ -207,7 +205,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  *{
+  * {
     max-width: 1200px;
   }
   .burger-menu {
@@ -325,7 +323,7 @@
   .nav-btns a {
     margin: 10px 0;
   }
-  
+
   .hero-container {
     flex-direction: column;
     margin: 0 auto;
