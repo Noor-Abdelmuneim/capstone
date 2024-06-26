@@ -54,6 +54,13 @@
   max-width: 1600px;
   margin: auto;
   
+  
+}
+span{
+  color: #1769aa
+
+
+  ;
 }
 
 .text-container {
@@ -61,18 +68,19 @@
   margin-left: 60px;
 }
 .text-container h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin-bottom:  20px;
 }
 .text-container p {
   font-size: 1.5em;
   margin-bottom:  20px;
+  color: #565E6D;
 }
 
 .hero-image {
   max-width: 100%;
   width: auto;
-  height: 400px;
+  height: 500px;
   border-radius: 50%;
   margin: 50px;
 }
@@ -392,6 +400,7 @@
     margin-left:10px;
     
   }
+
 }
 @media screen and (max-width: 350px) {
   .navbar{

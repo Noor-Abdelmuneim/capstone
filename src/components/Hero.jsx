@@ -9,13 +9,12 @@ const Hero = () => {
       <div className="hero-container">
         <div className="text-container">
           <h1 className={"header-text"}>
-          Your Premier Choice for Investing in Startups
+          Your  <span>Premier</span> Choice for Investing in <span>Startups</span>
           </h1>
           <p>
-            Iraq Startup Hub connects innovative startups with visionary
-            investors seeking impactful opportunities in Iraq's burgeoning
-            market.
+          Discover the most promising startups and secure your financial future with our expert guidance. Join a community of forward-thinking investors and gain access to exclusive opportunities that can transform your investment portfolio.
           </p>
+          <div className="hero-btns">
           <Stack spacing={1.5} direction="row">
             <Link to="/startups">
               <Button
@@ -26,7 +25,6 @@ const Hero = () => {
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                    margin:"10px",
                   },
                 }}
               >
@@ -39,6 +37,7 @@ const Hero = () => {
                 sx={{
                   borderRadius: "9px",
                   padding: "16px 70px",
+                  border:"2px solid",
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
@@ -49,6 +48,7 @@ const Hero = () => {
               </Button>
             </Link>
           </Stack>
+          </div>
         </div>
         <img src={building} alt="building" className="hero-image" />
       </div>
