@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="text-container">
           <h1 className={"header-text"}>
-            Invest in Iraq's Future: Discover Startup Opportunities
+          Your Premier Choice for Investing in Startups
           </h1>
           <p>
             Iraq Startup Hub connects innovative startups with visionary
@@ -23,10 +23,10 @@ const Hero = () => {
                 sx={{
                   borderRadius: "9px",
                   padding: "16px 70px",
-                  margin: "0 0 0 10px",
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                    margin:"10px",
                   },
                 }}
               >

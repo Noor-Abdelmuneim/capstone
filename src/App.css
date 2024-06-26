@@ -8,10 +8,11 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   background-color: #f0f0f0;
   padding: 10px;
+  column-gap: 3.5rem;
+  
 }
 
 .navbar-header {
@@ -42,6 +43,7 @@
   font-weight: bold;
 }
 
+
 /* hero section */
 
 .hero-container {
@@ -51,26 +53,28 @@
   height: 100vh;
   max-width: 1600px;
   margin: auto;
+  
 }
 
 .text-container {
   max-width: 100%;
-  margin: auto;
+  margin-left: 60px;
 }
 .text-container h1 {
-  font-size: 4em;
-  margin: 0 0 45px 10px;
+  font-size: 2.5em;
+  margin-bottom:  20px;
 }
 .text-container p {
-  font-size: 2em;
-  margin: 0 0 45px 10px;
+  font-size: 1.5em;
+  margin-bottom:  20px;
 }
 
 .hero-image {
-  width: 680px;
-  height: 680px;
+  max-width: 100%;
+  width: auto;
+  height: 400px;
   border-radius: 50%;
-  margin: auto;
+  margin: 50px;
 }
 
 /* Cards */
@@ -204,6 +208,8 @@
   margin: 100px;
 }
 
+
+
 @media screen and (max-width: 1200px) {
   * {
     max-width: 1200px;
@@ -214,11 +220,12 @@
   .burger-icon {
     display: none;
   }
-  .hero-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: 0 auto; */
+  .hero-container{
+    /* margin-top: -30%; */
+    height: 100vh;
+  }
+  .text-container {
+    width: 100%;
   }
   .hero-container h1 {
     font-size: 2rem;
@@ -227,33 +234,45 @@
     font-size: 1.5rem;
   }
   .hero-image {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    margin: 90px 30px 0 0;
+    width: 380px;
+    height: 380px;
   }
-  .text-container {
-    margin-top: 0%;
-    margin-left: 150px;
-    text-align: center;
-    width: 100%;
+
+}
+
+@media screen and (max-width: 992px) {
+  *{
+    max-width: 992px;
+  }
+  .hero-image {
+    width: 350px;
+    height: 350px;
+  }
+  .hero-container h1 {
+    font-size: 1.8rem;
+  }
+  .hero-container p {
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 768px) {
+  *{
+    max-width: 768px;
+  }
   .navbar {
     flex-direction: column;
   }
 
   .navbar-header {
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
   }
 
   .navbar-nav {
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
@@ -312,7 +331,7 @@
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+
   }
 
   .nav-btns.active {
@@ -325,8 +344,7 @@
   }
 
   .hero-container {
-    flex-direction: column;
-    margin: 0 auto;
+    flex-direction: column-reverse;
   }
   .hero-container h1 {
     font-size: 2.5rem;
@@ -336,122 +354,47 @@
     font-size: 1.5rem;
   }
   .hero-image {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
+    max-width: 100%;
+    width: auto;
+    /* height: 450px; */
     margin: 150px 60px;
   }
   .text-container {
-    /* margin-top: 65%;
-    margin-left: 80px; */
-    text-wrap: w;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 576px) {
-  .navbar {
-    flex-direction: column;
+  .navbar{
+    max-width: 576px;
   }
-
-  .navbar-header {
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    font-size: 30px;
-  }
-
-  .navbar-nav.active {
-    max-height: 200px;
-  }
-
-  .burger-menu {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    margin-right: 10px;
-  }
-
-  .burger-icon {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-    transition: transform 0.3s ease-out;
-  }
-
-  .burger-icon::before,
-  .burger-icon::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #333;
-    transition: transform 0.3s ease-out;
-  }
-
-  .burger-icon::before {
-    transform-origin: top left;
-    transform: translateY(-6px);
-  }
-
-  .burger-icon::after {
-    transform-origin: bottom left;
-    transform: translateY(6px);
-  }
-
-  .nav-btns {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-
-  .nav-btns.active {
-    max-height: 300px;
-  }
-
-  .nav-btns a {
-    margin: 10px 0;
-  }
-
   .hero-container {
-    max-width: 350px;
-    margin-left: 20px;
+    max-width: 100%;
+    margin-top: -40%;
   }
   .hero-container h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.4rem;
+    
   }
   .hero-container p {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .hero-image {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    margin-left: 55px;
-    margin: 100px 30px;
+    max-width: 100%;
+    height: 290px;
+    /* margin: auto; */
   }
   .text-container {
-    margin-top: 80%;
-    margin-left: 100px;
-    text-align: center;
-    width: 100%;
+    /* text-align: center; */
+    margin-top: -20%;
+    max-width: 100%;
+    margin-left:10px;
+    
   }
 }
 @media screen and (max-width: 350px) {
+  .navbar{
+    max-width: 350px;
+  }
 }

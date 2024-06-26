@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-header">
         <Link to="/" className="brand-logo">
-          <img src={logo} alt={"/"} width={"35px"} />
+          <img src={logo} alt={"/"} width={"40px"} />
         </Link>
         <button className="burger-menu" onClick={toggleMenu}>
           <span className="burger-icon"></span>
@@ -54,8 +54,9 @@ const Navbar = () => {
               variant="outlined"
               sx={{
                 borderRadius: "8px",
-                paddingLeft: "30px",
-                paddingRight: "30px",
+                paddingLeft: "33px",
+                paddingRight: "33px",
+                margin:"5px",
                 "&:hover": {
                   backgroundColor: "#007bff3",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
@@ -72,6 +73,7 @@ const Navbar = () => {
                 borderRadius: "8px",
                 paddingLeft: "30px",
                 paddingRight: "30px",
+                margin:"5px",
                 "&:hover": {
                   backgroundColor: "#007bff3",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
