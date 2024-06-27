@@ -8,14 +8,14 @@ const Hero = () => {
     <>
       <div className="hero-container">
         <div className="text-container">
-          <h1 className={"header-text"}>
+          <h1 className="header-text">
           Your  <span>Premier</span> Choice for Investing in <span>Startups</span>
           </h1>
           <p>
           Discover the most promising startups and secure your financial future with our expert guidance. Join a community of forward-thinking investors and gain access to exclusive opportunities that can transform your investment portfolio.
           </p>
           <div className="hero-btns">
-          <Stack spacing={1.5} direction="row">
+          <Stack spacing={1.5} direction={{ xs: 'column', sm: 'row' }}>
             <Link to="/startups">
               <Button
                 variant="contained"

@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-header">
         <Link to="/" className="brand-logo">
-          <img src={logo} alt={"/"} width={"40px"} />
+          <img src={logo} alt={"/"} width={"45px"} />
         </Link>
         <button className="burger-menu" onClick={toggleMenu}>
           <span className="burger-icon"></span>
