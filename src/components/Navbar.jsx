@@ -53,10 +53,11 @@ const Navbar = () => {
             <Button
               variant="outlined"
               sx={{
-                borderRadius: "8px",
-                paddingLeft: "33px",
-                paddingRight: "33px",
-                margin:"5px",
+                borderRadius: "9px",
+                paddingLeft: "30px",
+                paddingRight: "30px",
+                border:"2px solid",
+                margin:"2px",
                 "&:hover": {
                   backgroundColor: "#007bff3",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
@@ -70,10 +71,10 @@ const Navbar = () => {
             <Button
               variant="contained"
               sx={{
-                borderRadius: "8px",
+                borderRadius: "9px",
                 paddingLeft: "30px",
                 paddingRight: "30px",
-                margin:"5px",
+                margin:"2px",
                 "&:hover": {
                   backgroundColor: "#007bff3",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",

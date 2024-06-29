@@ -1,22 +1,22 @@
-import Cards from "../components/Cards";
+import Card from "../components/Card";
 
 const CardsPage = () => {
   return (
     <div className="startups-container">
       <h1>Startups In Iraqi Market</h1>
       <div className="cards">
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
-        <Cards />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </div>
   );
