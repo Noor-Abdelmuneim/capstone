@@ -37,14 +37,14 @@ const Navbar = () => {
             location.pathname.startsWith("/investors") ? "active" : ""
           }`}
         >
-          <Link to="/investors">Investors & Incubators</Link>
+          <Link to="/investors">Investors</Link>
         </li>
         <li
           className={`nav-item ${
-            location.pathname === "/contact" ? "active" : ""
+            location.pathname === "/incubators" ? "active" : ""
           }`}
         >
-          <Link to="/contact">Contact us</Link>
+          <Link to="/incubators">Incubators</Link>
         </li>
       </ul>
       <div className={`nav-btns ${isOpen ? "active" : ""}`}>
@@ -56,8 +56,8 @@ const Navbar = () => {
                 borderRadius: "9px",
                 paddingLeft: "30px",
                 paddingRight: "30px",
-                border:"2px solid",
-                margin:"2px",
+                border: "2px solid",
+                margin: "2px",
                 "&:hover": {
                   backgroundColor: "#007bff3",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
@@ -74,7 +74,7 @@ const Navbar = () => {
                 borderRadius: "9px",
                 paddingLeft: "30px",
                 paddingRight: "30px",
-                margin:"2px",
+                margin: "2px",
                 "&:hover": {
                   backgroundColor: "#007bff3",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",

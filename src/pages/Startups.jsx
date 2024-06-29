@@ -7,15 +7,29 @@ const Startups = () => {
     <div className="main-container">
       <div className="startups-container">
         <h1 className="header-text">Explore Startups Now</h1>
-        <p className="startups-pargraph">Explore the innovative startups transforming the Iraqi market.</p>
+        <p className="startups-pargraph">
+          Explore the innovative startups transforming the Iraqi market.
+        </p>
       </div>
       <div className="cards">
-        <Card name="Company name" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
-" picture={companypic}/>
-        <Card name="Company name" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
-"picture={companypic}/>
-        <Card name="Company name" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
-"picture={companypic}/>
+        <Card
+          name="Company name"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
+"
+          picture={companypic}
+        />
+        <Card
+          name="Company name"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
+"
+          picture={companypic}
+        />
+        <Card
+          name="Company name"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
+"
+          picture={companypic}
+        />
       </div>
       <div className="startups-container">
         <Link to="/cardspage">
