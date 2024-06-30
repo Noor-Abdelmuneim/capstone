@@ -33,7 +33,7 @@ const Startups = () => {
       </div>
       <div className="startups-container">
         <Link to="/cardspage">
-          <button className="startups-button">View All Startups</button>
+          <button className="startups-button">Explore Now</button>
         </Link>
       </div>
     </div>

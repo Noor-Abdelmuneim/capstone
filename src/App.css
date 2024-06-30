@@ -87,10 +87,9 @@ span {
   height: 500px;
   background-color: #ffffff;
   border-radius: 10%;
-  /* padding: 15px;
-  margin: 15px; */
+  margin: 15px;
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: 1fr;
   border: 1px solid #e6e6e6;
 }
 .card-text {
@@ -130,7 +129,7 @@ span {
 
 .startups-container {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .startups-button {
@@ -144,8 +143,8 @@ span {
 }
 .header-text {
   color: #1769aa;
-  margin-bottom: 30px;
-  padding-top: 25px;
+  margin-bottom: 15px;
+  padding-top: 15px;
 }
 
 /* Instruction page */
@@ -163,24 +162,39 @@ span {
 
 /* incubators */
 .incubators-container {
-  height: 50vh;
-  max-width: 1600px;
+  /* height: 50vh;
+  max-width: 1600px; */
   margin: 0 auto;
+  padding: 20px;
   text-align: center;
   background-color: #f5f5f5;
 }
 
-.incu-logo {
-  margin: 90px 50px 0;
+.header-text {
+  margin-top: 20px;
 }
 
+.first-inv-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.incu-logo {
+  margin: 30px;
+}
+
+.incu-logo img {
+  max-width: 100%;
+  height: auto;
+}
 /* Investors page */
 .logo-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-  width: 100%;
-  margin: 0 50px;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .inv-container {
@@ -190,8 +204,8 @@ span {
   text-align: center;
 }
 .inv-logo {
-  margin: 90px 20px 0;
-  background-color: #f5f5f5;
+  margin: 50px 0 0 0;
+  background-color: #efefef;
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -208,7 +222,7 @@ span {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* footer */
@@ -254,6 +268,31 @@ span {
   margin: 10px;
 }
 
+/* faqs */
+
+.faqs-container {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+.faqs-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+.faqs-header {
+  color: #1769aa;
+  padding: 15px;
+  text-align: center;
+}
+.faqs-p {
+  padding: 25px 0 40px;
+  text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
   * {
     max-width: 1200px;
@@ -280,6 +319,10 @@ span {
   .hero-image {
     width: 380px;
     height: 380px;
+  }
+  .logo-container {
+    grid-template-columns: repeat(2, 0.3s);
+    gap: 1rem;
   }
 }
 
@@ -413,6 +456,15 @@ span {
     display: flex;
     justify-content: center;
   }
+  .logo-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+    padding-bottom: 1rem;
+  }
+  .inv-container {
+    /* margin-top: -30%; */
+    height: 100vh;
+  }
 }
 
 @media (max-width: 576px) {
@@ -432,6 +484,9 @@ span {
   .text-container {
     max-width: 100%;
     margin-top: 2%;
+  }
+  .logo-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 350px) {
