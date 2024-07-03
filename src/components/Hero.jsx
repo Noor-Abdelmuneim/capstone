@@ -20,8 +20,9 @@ const Hero = () => {
               <Button
                 variant="contained"
                 sx={{
-                  borderRadius: "9px",
-                  padding: "16px 70px",
+                  borderRadius: "20px",
+                  padding: "20px 70px",
+                  backgroundColor:"#1769AA",
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
@@ -35,16 +36,16 @@ const Hero = () => {
               <Button
                 variant="outlined"
                 sx={{
-                  borderRadius: "9px",
-                  padding: "16px 70px",
-                  border:"2px solid #007bff3",
+                  borderRadius: "20px",
+                  padding: "20px 30px",
+                  border:"2px solid #1769AA",
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
                   },
                 }}
               >
-                Sign Up
+                Register with Us
               </Button>
             </Link>
           </Stack>

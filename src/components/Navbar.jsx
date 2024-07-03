@@ -56,7 +56,7 @@ const Navbar = () => {
                 borderRadius: "9px",
                 paddingLeft: "30px",
                 paddingRight: "30px",
-                border: "2px solid",
+                border: "2px solid #1769AA" ,
                 margin: "2px",
                 "&:hover": {
                   backgroundColor: "#007bff3",
@@ -75,6 +75,7 @@ const Navbar = () => {
                 paddingLeft: "30px",
                 paddingRight: "30px",
                 margin: "2px",
+                backgroundColor:"#1769AA",
                 "&:hover": {
                   backgroundColor: "#007bff3",
                   boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
