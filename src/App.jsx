@@ -8,6 +8,8 @@ import CardsPage from "./pages/CardsPage";
 import LoginPage from "./pages/LoginPage";
 import SignUp from "./pages/SignUp";
 import Incubators from "./pages/Incubators";
+import { register } from 'swiper/element/bundle';
+register();
 
 function App() {
   return (

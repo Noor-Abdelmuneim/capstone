@@ -38,7 +38,7 @@ const Hero = () => {
                 sx={{
                   borderRadius: "20px",
                   padding: "20px 30px",
-                  border:"2px solid #1769AA",
+                  border:"3px solid #1769AA",
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
