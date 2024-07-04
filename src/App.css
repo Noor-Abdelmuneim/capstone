@@ -162,12 +162,14 @@ padding-top: 98px;
   width: 100%;
   margin: 0 auto;
   background-color: #f5f5f5;
+  padding: 100px;
 }
 
 .startups-container {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   width: 100%;
+  /* margin: 30px;  */
 }
 
 .startups-button {
@@ -191,6 +193,7 @@ padding-top: 98px;
   height: 100vh;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 100px;
 }
 
 .instruction-container {
@@ -516,9 +519,17 @@ swiper-container {
     gap: 1.5rem 1rem;
     padding-bottom: 1rem;
   }
+  .cards {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   .inv-container {
     /* margin-top: -30%; */
     height: 100vh;
+  }
+  .card-container {
+    width: 400px;
+    height: 400px;
   }
 }
 

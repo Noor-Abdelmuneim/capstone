@@ -23,6 +23,7 @@ const Hero = () => {
                   borderRadius: "20px",
                   padding: "20px 70px",
                   backgroundColor:"#1769AA",
+                  // fontFamily:"poppins",
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
