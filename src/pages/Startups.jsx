@@ -22,8 +22,7 @@ const Startups = () => {
         </p>
       </div>
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+        loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
@@ -31,12 +30,29 @@ const Startups = () => {
         pagination={{
           clickable: true,
         }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
-          {" "}
           <Card
             name="Company name"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -45,7 +61,6 @@ const Startups = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <Card
             name="Company name"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -54,7 +69,6 @@ const Startups = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <Card
             name="Company name"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -63,7 +77,6 @@ const Startups = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <Card
             name="Company name"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -72,7 +85,6 @@ const Startups = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <Card
             name="Company name"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
