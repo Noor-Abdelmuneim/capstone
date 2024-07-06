@@ -475,14 +475,28 @@ swiper-container {
     margin: 0 auto;
   }
   .faqs-header {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   .faqs-p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .startups-container {
     max-width: 576px;
     margin: 0 auto;
+  }
+  .header-text {
+    font-size: 2.3rem;
+  }
+  .startups-pargraph {
+    font-size: 1.2rem;
+  }
+  .card-container {
+    width: 380px;
+    height: 430px;
+  }
+  .startups-button {
+    padding: 15px 35px;
+    border-radius: 10px;
   }
 }
 
@@ -592,11 +606,8 @@ swiper-container {
     display: flex;
     justify-content: center;
     margin-top: -20px;
-    border-radius: 20px;
-    padding: "20px 70px";
-    background-color: #1769aa;
-    font-family: "poppins";
   }
+
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem 1rem;

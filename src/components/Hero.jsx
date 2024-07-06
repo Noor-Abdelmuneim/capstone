@@ -18,15 +18,38 @@ const Hero = () => {
             forward-thinking investors and gain access to exclusive
             opportunities that can transform your investment portfolio.
           </p>
-          <div>
+          <div className="hero-btns">
             <Stack spacing={1.5} direction={{ xs: "column", sm: "row" }}>
               <Link to="/startups">
-                <Button className="hero-btns" variant="contained">
+                <Button
+                  variant="contained"
+                  sx={{
+                    borderRadius: "20px",
+                    padding: "20px 70px",
+                    backgroundColor: "#1769AA",
+                    fontFamily: "Arial, sans-serif",
+                    "&:hover": {
+                      backgroundColor: "#007bff3",
+                      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                    },
+                  }}
+                >
                   Startups
                 </Button>
               </Link>
               <Link to="/signup">
-                <Button className="hero-btns" variant="outlined">
+                <Button
+                  variant="outlined"
+                  sx={{
+                    borderRadius: "20px",
+                    padding: "20px 30px",
+                    border: "3px solid #1769AA",
+                    "&:hover": {
+                      backgroundColor: "#007bff3",
+                      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
+                    },
+                  }}
+                >
                   Register with Us
                 </Button>
               </Link>
