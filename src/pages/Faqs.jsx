@@ -19,18 +19,19 @@ export default function Faqs() {
         <div className="faqs-text">
           <h1 className="faqs-header">FAQs</h1>
           <p className="faqs-p">
-            Find answers to common questions about our platform, investing in
-            startups, and using our resources. Whether you're a new investor or an
-            experienced entrepreneur, our FAQs provide the information you need to
-            navigate the startup ecosystem with confidence.
+            Find answers to common questions about our platform, Whether you're
+            a new investor or an experienced entrepreneur, our FAQs provide the
+            information you need to navigate the startup ecosystem with
+            confidence.
           </p>
+        </div>
+        <div className="faqs-q">
           <Accordion
             expanded={expanded}
             onChange={handleExpansion}
             slots={{ transition: Fade }}
             slotProps={{ transition: { timeout: 400 } }}
             sx={{
-
               "& .MuiAccordion-region": { height: expanded ? "auto" : 0 },
               "& .MuiAccordionDetails-root": {
                 display: expanded ? "block" : "none",
@@ -47,16 +48,16 @@ export default function Faqs() {
             <AccordionDetails>
               <Typography>
                 Investing in startups can be highly rewarding, both financially
-                and personally. Startups have the potential for significant growth
-                and high returns, often outpacing more established companies.
-                Additionally, investing in startups allows you to support
-                innovative ideas and entrepreneurial talent, contributing to
-                economic development and job creation. However, it's important to
-                remember that investing in startups also comes with risks,
-                including the possibility of losing your investment. It's crucial
-                to conduct thorough research, diversify your investments, and
-                consider seeking advice from experienced investors or financial
-                advisors.
+                and personally. Startups have the potential for significant
+                growth and high returns, often outpacing more established
+                companies. Additionally, investing in startups allows you to
+                support innovative ideas and entrepreneurial talent,
+                contributing to economic development and job creation. However,
+                it's important to remember that investing in startups also comes
+                with risks, including the possibility of losing your investment.
+                It's crucial to conduct thorough research, diversify your
+                investments, and consider seeking advice from experienced
+                investors or financial advisors.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -76,8 +77,7 @@ export default function Faqs() {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion
-          >
+          <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"

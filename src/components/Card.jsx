@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Card({ name, description, picture }) {
   return (
@@ -6,11 +7,13 @@ export default function Card({ name, description, picture }) {
       <div className="card-container">
         <img src={picture} alt="" />
         <div className="card-text">
-          <h4>{name}</h4>
-          <p>{description}</p>
-          {/* <Link to="/singlecard">
-          <button>Explore More</button>
-        </Link> */}
+          <h4 className="h-card">{name}</h4>
+          <p className="p-card">
+            {description}
+            <Link to="/singlecard">
+              <button className="startup-button">Read More</button>
+            </Link>
+          </p>
         </div>
       </div>
     </div>

@@ -11,11 +11,14 @@
   justify-content: center;
   background-color: #f0f0f0;
   padding: 10px;
-  column-gap: 3.5rem;
-  align-content: stretch;
-  justify-content: space-evenly;
 }
-
+.nav-content {
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
 .navbar-header {
   display: flex;
   align-items: center;
@@ -52,8 +55,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  max-width: 1600px;
-  margin: auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 span {
   color: #1769aa;
@@ -64,12 +67,12 @@ span {
   margin: 30px;
 }
 .text-container h1 {
-  font-size: 3.5em;
+  font-size: 3.4em;
   margin-bottom: 20px;
   color: black;
 }
 .text-container p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: 20px;
   color: #565e6d;
 }
@@ -77,9 +80,8 @@ span {
 .hero-image {
   max-width: 100%;
   width: auto;
-  height: 500px;
-  border-radius: 50%;
-  margin: 50px;
+  height: 400px;
+  margin: 30px;
 }
 
 /* Cards */
@@ -95,7 +97,17 @@ span {
   border: 1px solid #e6e6e6;
 }
 .card-text {
-  margin-left: 10px;
+  margin: -20px 15px 0;
+  text-align: left;
+}
+.h-card {
+  color: #565e6d;
+  font-size: 1.5rem;
+}
+.p-card {
+  color: #9095a1;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 .card-container img {
   width: 100%;
@@ -152,7 +164,7 @@ span {
 .cards-text {
   max-width: 400px;
   width: 100%;
-  margin-left: 28px;
+  /* margin-left: 28px; */
 }
 
 /* Startups page */
@@ -181,10 +193,21 @@ span {
   border-radius: 20px;
   cursor: pointer;
 }
+.startup-button {
+  cursor: pointer;
+  border: none;
+  color: #1769aa;
+}
+
 .header-text {
   color: #1769aa;
   margin-bottom: 15px;
   padding-top: 15px;
+  font-size: 2.5rem;
+}
+.startups-pargraph {
+  font-size: 1.3rem;
+  color: #565e6d;
 }
 .swiper {
   max-width: 1600px;
@@ -347,7 +370,6 @@ swiper-container {
 
 .faqs-container {
   margin: 0 auto;
-  padding: 20px;
   background-color: #f5f5f5;
   height: 100vh;
 }
@@ -358,23 +380,28 @@ swiper-container {
   width: 100%;
 }
 .faqs-text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.faqs-q {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 .faqs-header {
   color: #1769aa;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
+  font-size: 2.5rem;
 }
 .faqs-p {
   padding: 25px 0 40px;
   text-align: center;
+  font-size: 1.3rem;
+  color: #565e6d;
 }
 
 @media screen and (max-width: 1200px) {
-  * {
-    max-width: 1200px;
-  }
   .burger-menu {
     display: none;
   }
@@ -382,29 +409,23 @@ swiper-container {
     display: none;
   }
   .hero-container {
-    /* margin-top: -30%; */
-    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
   }
-  /* .text-container {
-    width: 100%;
-  } */
   .hero-container h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .hero-container p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 30px;
   }
   .hero-image {
-    width: 380px;
-    height: 380px;
+    width: 450px;
+    height: 450px;
   }
   .logo-container {
     grid-template-columns: repeat(2, 0.3s);
     gap: 1rem;
-  }
-  .main-container {
-    padding-top: 100px;
   }
   .startups-button {
     margin-top: 30px;
@@ -424,6 +445,10 @@ swiper-container {
     width: 100%;
     margin: 0 auto;
   }
+  .nav-content {
+    max-width: 992px;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -431,12 +456,18 @@ swiper-container {
     max-width: 992px;
   }
   .hero-image {
-    width: auto;
-    height: 300px;
-    margin: 10px;
+    width: 330px;
+    height: 380px;
   }
-  .text-container {
-    margin: 30px;
+  .hero-container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .hero-container h1 {
+    font-size: 2.3rem;
+  }
+  .hero-container p {
+    font-size: 1.2rem;
   }
   .faqs-content {
     max-width: 768px;
@@ -448,6 +479,10 @@ swiper-container {
   }
   .faqs-p {
     font-size: 1.3rem;
+  }
+  .startups-container {
+    max-width: 576px;
+    margin: 0 auto;
   }
 }
 
@@ -542,11 +577,9 @@ swiper-container {
   .text-container {
     text-align: center;
     max-width: 100%;
-    /* margin-top: 30%; */
   }
   .hero-container h1 {
     font-size: 2.5rem;
-    /* margin-bottom: 30px; */
   }
   .hero-container p {
     font-size: 1.5rem;
@@ -554,11 +587,15 @@ swiper-container {
   }
   .hero-image {
     width: auto;
-    /* margin: -60px 0 40px 0; */
   }
   .hero-btns {
     display: flex;
     justify-content: center;
+    margin-top: -20px;
+    border-radius: 20px;
+    padding: "20px 70px";
+    background-color: #1769aa;
+    font-family: "poppins";
   }
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
@@ -574,8 +611,9 @@ swiper-container {
     height: 100vh;
   }
   .card-container {
-    width: 400px;
+    width: 350px;
     height: 400px;
+    margin: 40px;
   }
   .faqs-content {
     max-width: 576px;
@@ -617,14 +655,24 @@ swiper-container {
     margin: 0 auto;
   }
   .header-text {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
   .startups-pargraph {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .card-container {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 380px;
+    margin: 20px;
+  }
+  .faqs-header {
+    font-size: 1.8rem;
+  }
+  .faqs-p {
+    font-size: 1rem;
+  }
+  .startups-button {
+    padding: 15px 30px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -632,8 +680,6 @@ swiper-container {
     max-width: 350px;
   }
   .hero-btns {
-    width: auto;
-    height: 100px;
   }
   .hero-image {
     width: auto;
@@ -643,7 +689,7 @@ swiper-container {
     margin: 10px;
   }
   .hero-container h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .hero-container p {
     font-size: 0.8rem;

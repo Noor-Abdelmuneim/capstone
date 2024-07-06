@@ -39,7 +39,7 @@ const Startups = () => {
           {" "}
           <Card
             name="Company name"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
 "
             picture={companypic}
           />
@@ -48,7 +48,7 @@ const Startups = () => {
           {" "}
           <Card
             name="Company name"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
 "
             picture={companypic}
           />
@@ -57,7 +57,7 @@ const Startups = () => {
           {" "}
           <Card
             name="Company name"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
 "
             picture={companypic}
           />
@@ -66,7 +66,7 @@ const Startups = () => {
           {" "}
           <Card
             name="Company name"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
 "
             picture={companypic}
           />
@@ -75,7 +75,7 @@ const Startups = () => {
           {" "}
           <Card
             name="Company name"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum delectus beatae quaerat enim nobis ipsam veniam. Voluptate, quia quod.
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit.
 "
             picture={companypic}
           />
