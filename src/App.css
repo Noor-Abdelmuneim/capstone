@@ -108,11 +108,11 @@ span {
 /* Cards */
 
 .card-container {
-  width: 400px;
-  height: 450px;
+  width: 380px;
+  height: 420px;
   background-color: #ffffff;
   border-radius: 10%;
-  margin: 15px;
+  margin: 15px 0;
   display: grid;
   grid-template-columns: 1fr;
   border: 1px solid #e6e6e6;
@@ -146,14 +146,13 @@ span {
 .card-container button:hover {
   background-color: #1a74be;
 } */
-
-/* .cards {
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 1600px;
   margin: 0 auto;
-} */
+}
 
 /* instructions-cards */
 .card-wrapper {
@@ -194,15 +193,19 @@ span {
   max-width: 100%;
   margin: 0 auto;
   background-color: #f5f5f5;
-  padding: 25px;
-  margin: 20px 0;
 }
 
 .startups-container {
   text-align: center;
   margin-bottom: 20px 0;
   width: 100%;
-  /* margin: 30px;  */
+  /* margin: 30px; */
+}
+.header-cards {
+  color: #1769aa;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  font-size: 2.2rem;
 }
 
 .startups-button {
@@ -312,7 +315,7 @@ swiper-container {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .inv-container {
@@ -337,10 +340,14 @@ swiper-container {
   justify-content: center;
 }
 .inv-logo img {
-  max-width: 100%;
+  max-width: 150px;
   height: auto;
   display: block;
   margin: 0;
+}
+.inv-p {
+  max-width: 999px;
+  margin: 0 auto;
 }
 
 /* footer */
@@ -420,6 +427,9 @@ swiper-container {
   font-size: 1.3rem;
   color: #565e6d;
 }
+.css-eqpfi5-MuiAccordionSummary-content {
+  padding: 20px;
+}
 
 @media screen and (max-width: 1200px) {
   .burger-menu {
@@ -451,8 +461,8 @@ swiper-container {
     margin-top: 30px;
   }
   .card-container {
-    width: 500px;
-    height: 550px;
+    width: 400px;
+    height: 500px;
   }
   .header-text {
     font-size: 3rem;
@@ -468,6 +478,15 @@ swiper-container {
   .nav-content {
     max-width: 992px;
     margin: 0;
+  }
+  /* Investors page */
+  .logo-container {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  .inv-p {
+    max-width: 900px;
   }
 }
 
@@ -517,6 +536,15 @@ swiper-container {
   .startups-button {
     padding: 15px 35px;
     border-radius: 10px;
+  }
+  /* Investors page */
+  .logo-container {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .inv-p {
+    max-width: 700px;
   }
 }
 
@@ -630,8 +658,9 @@ swiper-container {
 
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem 1rem;
-    padding-bottom: 1rem;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 440px;
   }
   /* .cards {
     max-width: 768px;
@@ -653,6 +682,9 @@ swiper-container {
   .startups-container {
     max-width: 576px;
     margin: 0 auto;
+  }
+  .inv-p {
+    max-width: 500px;
   }
 }
 
@@ -705,6 +737,22 @@ swiper-container {
   .startups-button {
     padding: 15px 30px;
   }
+  .logo-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.2rem;
+    margin: -40px auto;
+    max-width: 225px;
+  }
+  .inv-p {
+    max-width: 300px;
+  }
+  .inv-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .inv-logo img {
+    max-width: 80px;
+  }
 }
 @media screen and (max-width: 350px) {
   .navbar {
@@ -734,5 +782,22 @@ swiper-container {
   }
   .startups-pargraph {
     font-size: 1.2rem;
+  }
+  .logo-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
+    margin: 0 auto;
+    max-width: 225px;
+  }
+  .inv-p {
+    display: block;
+    max-width: 300px;
+  }
+  .inv-logo {
+    width: 120px;
+    height: 120px;
+  }
+  .inv-logo img {
+    max-width: 80px;
   }
 }

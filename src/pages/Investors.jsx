@@ -5,18 +5,17 @@ import ffc from "../photos/First_Finance.png";
 import flat from "../photos/Flat6Labs_with_name-removebg-preview.png";
 import usaid from "../photos/usaidlogo-removebg-preview.png";
 import iom from "../photos/image-removebg-preview_7.png";
-import grofin from "../photos/GroFin-removebg-preview.png";
 import Innovest from "../photos/Innovest-removebg-preview.png";
 
 const Investors = () => {
   return (
     <div className="inv-container">
       <h1 className="header-text">Investors</h1>
-      <p>
+      <p className="inv-p">
         Connect with a diverse network of investors eager to support innovative
-        startups. <br /> Find the perfect match for your funding needs and
-        accelerate your business growth with the expertise and resources these
-        investors bring.
+        startups. Find the perfect match for your funding needs and accelerate
+        your business growth with the expertise and resources these investors
+        bring.
       </p>
       <div className="logo-container">
         <div className="inv-logo">
@@ -48,7 +47,7 @@ const Investors = () => {
         </div>
         <div className="inv-logo">
           <a target="_blank" rel="noopener noreferrer" href="https://ffc.iq/">
-            <img src={ffc} alt="kapitaLogo" width={"130px"} />
+            <img src={ffc} alt="kapitaLogo" />
           </a>
         </div>
         <div className="inv-logo">

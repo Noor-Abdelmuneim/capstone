@@ -30,10 +30,10 @@ const Navbar = () => {
           </li>
           <li
             className={`nav-item ${
-              location.pathname.startsWith("/startups") ? "active" : ""
+              location.pathname.startsWith("/CardsPage") ? "active" : ""
             }`}
           >
-            <Link to="/startups">Start-ups</Link>
+            <Link to="/CardsPage">Start-ups</Link>
           </li>
           <li
             className={`nav-item ${

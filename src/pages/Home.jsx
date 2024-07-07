@@ -13,7 +13,7 @@ const Home = () => {
       <Startups />
       {/* <Instructions />  */}
       {/* <Incubators />  */}
-      {/* <Investors />  */}
+      <Investors />
       <Faqs />
       {/* <Footer/> */}
     </>
