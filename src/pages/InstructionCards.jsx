@@ -14,7 +14,7 @@ const InstructionCards = () => {
             <div className="card-wrapper">
                 <div className="cards-container">
                     <div className="instructions-svg1"><svg
-                        width="254px"
+                        width="100%"
                         height="227px"
                         viewBox="0 0 254 227"
                         fill="none"
@@ -189,7 +189,7 @@ const InstructionCards = () => {
                 <div className="cards-container">
                     <div className="instructions-svg2">
                         <svg
-                            width="335"
+                            width="100%"
                             height="187"
                             viewBox="0 0 335 187"
                             fill="none"
@@ -336,7 +336,7 @@ const InstructionCards = () => {
                 <div className="cards-container">
                     <div className="instructions-svg3">
                         <svg
-                            width="167"
+                            width="100%"
                             height="202"
                             viewBox="0 0 167 202"
                             fill="none"

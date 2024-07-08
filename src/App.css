@@ -196,6 +196,7 @@ span {
   border: 1px solid #D8D8D8;
   text-align: center;
 }
+
 .cards-text {
   max-width: 400px;
   width: 100%;
@@ -533,6 +534,14 @@ swiper-container {
     max-width: 900px;
     margin: 0 auto 20px;
   }
+  .inst-header {
+    font-size: 1.7rem;
+    margin: 0 auto;
+}
+.instructions-p {
+  font-size: 1.2rem;
+  margin: 5px auto;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -591,6 +600,7 @@ swiper-container {
   .inv-p {
     max-width: 700px;
   }
+  
 }
 
 @media (max-width: 768px) {
