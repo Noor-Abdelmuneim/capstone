@@ -153,12 +153,20 @@ span {
   max-width: 1600px;
   margin: 0 auto;
 }
+.cards-page{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: 50px auto;
+  
+}
 
 /* instructions-cards */
 .card-wrapper {
   display: flex;
   justify-content: space-around;
-  margin: -30px 50px 0 50px;
+  margin: 0 50px 0 50px;
 }
 .instructions-svg1 {
   padding-top: 70px;
@@ -199,7 +207,7 @@ span {
   text-align: center;
   margin-bottom: 20px 0;
   width: 100%;
-  padding: 40px;
+  padding: 30px;
   /* margin: 30px; */
 }
 .header-cards {
@@ -227,13 +235,20 @@ span {
 .header-text {
   color: #1769aa;
   margin-bottom: 15px;
-  padding-top: 15px;
   font-size: 2.5rem;
 }
 .startups-pargraph {
   font-size: 1.3rem;
   color: #565e6d;
 }
+.cards-p{
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #565e6d;
+}
+
 .swiper {
   max-width: 1600px;
   width: 100%;
@@ -464,8 +479,8 @@ swiper-container {
     margin-top: 30px;
   }
   .card-container {
-    width: 400px;
-    height: 500px;
+    width: 380px;
+    height: 430px;
   }
   .header-text {
     font-size: 2.5rem;
@@ -490,6 +505,10 @@ swiper-container {
   }
   .inv-p {
     max-width: 900px;
+  }
+  .cards-p{
+    max-width: 900px;
+    margin: 0 auto 20px;
   }
 }
 
@@ -689,6 +708,9 @@ swiper-container {
   .inv-p {
     max-width: 500px;
   }
+  .card-wrapper{
+    margin: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -717,7 +739,7 @@ swiper-container {
     margin: 0 auto;
   }
   .startups-container {
-    max-width: 350px;
+    max-width: 450px;
     margin: 0 auto;
   }
   .header-text {
@@ -729,7 +751,7 @@ swiper-container {
   .card-container {
     width: 250px;
     height: 380px;
-    margin: 20px;
+    margin: 0 0 20px;
   }
   .faqs-header {
     font-size: 1.8rem;
@@ -777,8 +799,11 @@ swiper-container {
     font-size: 0.8rem;
   }
   .startups-container {
-    max-width: 250px;
+    max-width: 400px;
     margin: 0 auto;
+  }
+  .card-wrapper{
+    margin: 0;
   }
   .header-text {
     font-size: 2rem;
