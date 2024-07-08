@@ -52,7 +52,7 @@ const Navbar = () => {
         </ul>
         <div className={`nav-btns ${isOpen ? "active" : ""}`}>
           <Stack spacing={1} direction="row">
-            <Link to="/loginpage">
+            <Link to="/signUp">
               <Button
                 variant="outlined"
                 sx={{
@@ -61,31 +61,15 @@ const Navbar = () => {
                   paddingRight: "30px",
                   border: "2px solid #1769AA",
                   margin: "2px",
+                  width:"208px",
+                  height:"44px",
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
                   },
                 }}
               >
-                Login
-              </Button>
-            </Link>
-            <Link to="/signup">
-              <Button
-                variant="contained"
-                sx={{
-                  borderRadius: "9px",
-                  paddingLeft: "30px",
-                  paddingRight: "30px",
-                  margin: "2px",
-                  backgroundColor: "#1769AA",
-                  "&:hover": {
-                    backgroundColor: "#007bff3",
-                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                  },
-                }}
-              >
-                Sign Up
+                Register as a startup
               </Button>
             </Link>
           </Stack>
