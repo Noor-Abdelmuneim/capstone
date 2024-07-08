@@ -182,8 +182,8 @@ const InstructionCards = () => {
                     </svg>
                     </div>
                     <div className="cards-text">
-                        <h4>{"Create an Account"}</h4>
-                        <p>{"Sign up for a free investor account to get started."}</p>
+                        <h1 className="inst-header">{"Create an Account"}</h1>
+                        <p className="instructions-p">{"Sign up for a free investor account to get started."}</p>
                     </div>
                 </div>
                 <div className="cards-container">
@@ -329,8 +329,8 @@ const InstructionCards = () => {
                         </svg>
                     </div>
                     <div className="cards-text">
-                        <h4>{"Browse"}</h4>
-                        <p>{"Explore various investment opportunities."}</p>
+                        <h1 className="inst-header">{"Browse"}</h1>
+                        <p className="instructions-p">{"Explore various investment opportunities."}</p>
                     </div>
                 </div>
                 <div className="cards-container">
@@ -472,8 +472,8 @@ const InstructionCards = () => {
                         </svg>
                     </div>
                     <div className="cards-text">
-                        <h4>{"Invest in Startups"}</h4>
-                        <p>{"Connect with the company that meets your criteria and make your investment."}</p>
+                        <h1 className="inst-header">{"Invest in Startups"}</h1>
+                        <p className="instructions-p">{"Connect with the company that meets your criteria and make your investment."}</p>
                     </div>
                 </div>
             </div>

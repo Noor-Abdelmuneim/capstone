@@ -177,21 +177,42 @@ span {
 .instructions-svg3 {
   padding-top: 98px;
 }
+.instruction-pargraph{
+  max-width: 999px;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #565e6d;
+}
+
 .cards-container {
-  width: 450px;
+  width: 402px;
   height: 500px;
   background-color: #ffffff;
-  border-radius: 10%;
+  border-radius: 4%;
   margin: 15px;
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #D8D8D8;
   text-align: center;
 }
 .cards-text {
   max-width: 400px;
   width: 100%;
   /* margin-left: 28px; */
+}
+.inst-header{
+  color: #1769aa;
+  max-width: 500px;
+  margin: -20px 0 20px;
+}
+.instructions-p{
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #565e6d;
+  font-weight: 600;
 }
 
 /* Startups page */
@@ -314,7 +335,7 @@ span {
 }
 
 .incu-logo img {
-  max-width: 50%;
+  max-width: 40%;
   height: auto;
   margin: 0 auto;
 }
