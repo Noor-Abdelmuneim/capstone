@@ -16,7 +16,7 @@ const Home = () => {
       <Investors />
 
       <Faqs />
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };

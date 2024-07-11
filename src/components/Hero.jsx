@@ -25,7 +25,7 @@ const Hero = () => {
                   variant="contained"
                   sx={{
                     borderRadius: "20px",
-                    padding: "20px 70px",
+                    padding: "22px 63px",
                     backgroundColor: "#1769AA",
                     textTransform: "none",
                     fontFamily: "Arial, Helvetica, sans-serif",
