@@ -25,11 +25,12 @@ const Hero = () => {
                   variant="contained"
                   sx={{
                     borderRadius: "20px",
-                    padding: "22px 63px",
+                    padding: "18px 77px",
                     backgroundColor: "#1769AA",
                     textTransform: "none",
                     fontFamily: "Arial, Helvetica, sans-serif",
-                    fontWeight: "500",
+                    fontWeight: "bold",
+                    fontSize:"1.1rem",
                     "&:hover": {
                       backgroundColor: "#007bff3",
                       boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
@@ -44,12 +45,13 @@ const Hero = () => {
                   variant="outlined"
                   sx={{
                     borderRadius: "20px",
-                    padding: "20px 30px",
+                    padding: "17px 39px",
                     border: "3px solid #1769AA",
                     textTransform: "none",
                     color: "#1769AA",
                     fontFamily: "Arial, Helvetica, sans-serif",
-                    fontWeight: "bold",
+                    fontWeight: "700",
+                    fontSize:"1.1rem",
                     "&:hover": {
                       backgroundColor: "#007bff3",
                       boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",

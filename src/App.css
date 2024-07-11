@@ -276,6 +276,7 @@
   color: #565e6d;
 }
 
+
 .swiper {
   max-width: 1600px;
   width: 100%;
@@ -485,9 +486,14 @@ swiper-container {
   text-align: center;
   font-size: 1.3rem;
   color: #565e6d;
+  
 }
 .css-eqpfi5-MuiAccordionSummary-content {
   padding: 20px;
+}
+.css-ahj2mt-MuiTypography-root{
+  color: #565E6D;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -546,6 +552,7 @@ swiper-container {
   }
   .inv-p {
     max-width: 900px;
+    color: #565E6D;
   }
   .cards-p {
     max-width: 900px;
@@ -732,7 +739,7 @@ swiper-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 0 auto;
-    max-width: 440px;
+    max-width: 400px;
   }
   /* .cards {
     max-width: 768px;
@@ -760,6 +767,10 @@ swiper-container {
   }
   .card-wrapper {
     margin: 0;
+  }
+  .inv-logo{
+    width: 180px ;
+    height: 180px;
   }
 
 }
@@ -816,15 +827,15 @@ swiper-container {
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.2rem;
-    margin: -40px auto;
-    max-width: 225px;
+    margin: 0 auto;
+    max-width: 340px;
   }
   .inv-p {
     max-width: 300px;
   }
   .inv-logo {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
   }
   .inv-logo img {
     max-width: 80px;
@@ -866,15 +877,15 @@ swiper-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.3rem;
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 260px;
   }
   .inv-p {
     display: block;
     max-width: 300px;
   }
   .inv-logo {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
   }
   .inv-logo img {
     max-width: 80px;
