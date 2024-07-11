@@ -33,13 +33,16 @@
   background-color: #f0f0f0;
   padding: 10px;
 }
+
 .nav-content {
   max-width: 1600px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
+
 .navbar-header {
   display: flex;
   align-items: center;
@@ -48,9 +51,8 @@
 .navbar-nav {
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  margin: 0;
   padding: 0;
 }
 
@@ -79,7 +81,7 @@
   max-width: 1400px;
   margin: 0 auto;
 }
-span {
+.hero-container span {
   color: #1769aa;
 }
 
@@ -109,7 +111,7 @@ span {
 
 .card-container {
   width: 380px;
-  height: 500px;
+  height: 450px;
   background-color: #ffffff;
   border-radius: 6%;
   margin: 15px 0;
@@ -153,13 +155,12 @@ span {
   max-width: 1600px;
   margin: 0 auto;
 }
-.cards-page{
+.cards-page {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 1500px;
   margin: 50px auto;
-  
 }
 
 /* instructions-cards */
@@ -177,7 +178,7 @@ span {
 .instructions-svg3 {
   padding-top: 98px;
 }
-.instruction-pargraph{
+.instruction-pargraph {
   max-width: 999px;
   margin: 0 auto 20px;
   text-align: center;
@@ -193,7 +194,7 @@ span {
   margin: 15px;
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   text-align: center;
 }
 
@@ -202,12 +203,12 @@ span {
   width: 100%;
   /* margin-left: 28px; */
 }
-.inst-header{
+.inst-header {
   color: #1769aa;
   max-width: 500px;
   margin: -20px 0 20px;
 }
-.instructions-p{
+.instructions-p {
   max-width: 300px;
   margin: 0 auto;
   text-align: center;
@@ -229,7 +230,7 @@ span {
   text-align: center;
   margin-bottom: 20px 0;
   width: 100%;
-  padding: 30px;
+  padding-top: 15px;
   /* margin: 30px; */
 }
 .header-cards {
@@ -247,6 +248,10 @@ span {
   margin-top: 20px;
   border-radius: 19px;
   cursor: pointer;
+  text-transform: "none";
+  color: "#1769AA";
+  font-family: "Arial";
+  font-weight: "bold";
 }
 .startup-button {
   cursor: pointer;
@@ -263,7 +268,7 @@ span {
   font-size: 1.3rem;
   color: #565e6d;
 }
-.cards-p{
+.cards-p {
   max-width: 999px;
   margin: 0 auto 20px;
   text-align: center;
@@ -388,7 +393,7 @@ swiper-container {
 .inv-p {
   max-width: 999px;
   margin: 0 auto;
-  color: #565E6D;
+  color: #565e6d;
   font-size: 1.3rem;
 }
 
@@ -530,18 +535,18 @@ swiper-container {
   .inv-p {
     max-width: 900px;
   }
-  .cards-p{
+  .cards-p {
     max-width: 900px;
     margin: 0 auto 20px;
   }
   .inst-header {
     font-size: 1.7rem;
     margin: 0 auto;
-}
-.instructions-p {
-  font-size: 1.2rem;
-  margin: 5px auto;
-}
+  }
+  .instructions-p {
+    font-size: 1.2rem;
+    margin: 5px auto;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -600,36 +605,36 @@ swiper-container {
   .inv-p {
     max-width: 700px;
   }
-  
 }
 
 @media (max-width: 768px) {
   .navbar {
+    display: flex;
     flex-direction: column;
     max-width: 768px;
   }
 
   .navbar-header {
+    display: flex;
     justify-content: space-between;
-    max-width: 100%;
+    align-items: center;
     padding: 10px;
   }
 
   .navbar-nav {
+    display: flex;
     flex-direction: column;
-    max-width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+    margin: 0;
   }
 
   .navbar-nav.active {
     max-height: 200px;
   }
+
   .nav-item {
-    margin: 5px;
-  }
-  .nav-btns.active {
     margin: 5px;
   }
 
@@ -655,32 +660,32 @@ swiper-container {
     content: "";
     display: block;
     width: 100%;
-    height: 100%;
+    height: 2px;
     background-color: #333;
     transition: transform 0.3s ease-out;
   }
 
   .burger-icon::before {
     transform-origin: top left;
-    transform: translateY(-6px);
+    transform: translateY(-6px) rotate(0);
   }
 
   .burger-icon::after {
     transform-origin: bottom left;
-    transform: translateY(6px);
+    transform: translateY(6px) rotate(0);
   }
 
   .nav-btns {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease-out;
   }
 
   .nav-btns.active {
     max-height: 400px;
-    display: flex;
   }
 
   .nav-btns a {
@@ -703,7 +708,7 @@ swiper-container {
     margin-bottom: 50px;
   }
   .hero-image {
-    width: auto;
+    /* width: auto; */
   }
   .hero-btns {
     display: flex;
@@ -741,7 +746,7 @@ swiper-container {
   .inv-p {
     max-width: 500px;
   }
-  .card-wrapper{
+  .card-wrapper {
     margin: 0;
   }
 }
@@ -835,7 +840,7 @@ swiper-container {
     max-width: 400px;
     margin: 0 auto;
   }
-  .card-wrapper{
+  .card-wrapper {
     margin: 0;
   }
   .header-text {

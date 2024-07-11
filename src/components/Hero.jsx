@@ -27,7 +27,9 @@ const Hero = () => {
                     borderRadius: "20px",
                     padding: "20px 70px",
                     backgroundColor: "#1769AA",
-                    fontFamily: "Arial, sans-serif",
+                    textTransform: "none",
+                    fontFamily: "Arial, Helvetica, sans-serif",
+                    fontWeight: "500",
                     "&:hover": {
                       backgroundColor: "#007bff3",
                       boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
@@ -44,6 +46,10 @@ const Hero = () => {
                     borderRadius: "20px",
                     padding: "20px 30px",
                     border: "3px solid #1769AA",
+                    textTransform: "none",
+                    color: "#1769AA",
+                    fontFamily: "Arial, Helvetica, sans-serif",
+                    fontWeight: "bold",
                     "&:hover": {
                       backgroundColor: "#007bff3",
                       boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
