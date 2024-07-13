@@ -111,7 +111,7 @@
 
 .card-container {
   width: 380px;
-  height: 500px;
+  height: 440px;
   background-color: #ffffff;
   border-radius: 6%;
   margin: 15px 0;
@@ -276,7 +276,6 @@
   color: #565e6d;
 }
 
-
 .swiper {
   max-width: 1600px;
   width: 100%;
@@ -402,7 +401,7 @@ swiper-container {
 .footer {
   position: relative;
   width: 100%;
-  background: #1769AA;
+  background: #1769aa;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
@@ -446,12 +445,11 @@ swiper-container {
 }
 .up-btn {
   position: absolute;
-  bottom: 10px; 
-  right: 10px; 
-  z-index: 1000; 
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
   cursor: pointer;
 }
-
 
 /* faqs */
 
@@ -486,13 +484,12 @@ swiper-container {
   text-align: center;
   font-size: 1.3rem;
   color: #565e6d;
-  
 }
 .css-eqpfi5-MuiAccordionSummary-content {
   padding: 20px;
 }
-.css-ahj2mt-MuiTypography-root{
-  color: #565E6D;
+.css-ahj2mt-MuiTypography-root {
+  color: #565e6d;
   font-size: 2rem;
 }
 
@@ -552,7 +549,7 @@ swiper-container {
   }
   .inv-p {
     max-width: 900px;
-    color: #565E6D;
+    color: #565e6d;
   }
   .cards-p {
     max-width: 900px;
@@ -768,11 +765,10 @@ swiper-container {
   .card-wrapper {
     margin: 0;
   }
-  .inv-logo{
-    width: 180px ;
+  .inv-logo {
+    width: 180px;
     height: 180px;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -809,6 +805,7 @@ swiper-container {
   }
   .startups-pargraph {
     font-size: 1rem;
+    margin: 0 50px;
   }
   .card-container {
     width: 250px;
@@ -840,12 +837,13 @@ swiper-container {
   .inv-logo img {
     max-width: 80px;
   }
+  .up-btn {
+    /* padding: 10px -200px 0 0; */
+  }
 }
 @media screen and (max-width: 350px) {
   .navbar {
     max-width: 350px;
-  }
-  .hero-btns {
   }
   .hero-image {
     width: auto;
@@ -868,7 +866,7 @@ swiper-container {
     margin: 0;
   }
   .header-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .startups-pargraph {
     font-size: 1.2rem;
@@ -889,5 +887,16 @@ swiper-container {
   }
   .inv-logo img {
     max-width: 80px;
+  }
+  .faqs-header {
+    font-size: 1.5rem;
+  }
+  .footer p {
+    font-size: 0.8rem;
+    max-width: 200px;
+    text-align: center;
+  }
+  .up-btn {
+    padding: 100px 30px;
   }
 }
