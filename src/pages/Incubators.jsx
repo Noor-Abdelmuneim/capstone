@@ -28,7 +28,7 @@ const Incubators = () => {
       <div className="incubators-container">
         <div className="incubators-text">
           <h1 className="header-text">Incubators</h1>
-          <p>
+          <p className="incu-p">
             Discover a variety of incubators that support and nurture startups,
             providing them with the resources, mentorship, and networking
             opportunities needed to thrive.Explore our selection to find the

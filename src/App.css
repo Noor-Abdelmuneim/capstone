@@ -110,7 +110,7 @@
 /* Cards */
 
 .card-container {
-  width: 380px;
+  width: 350px;
   height: 440px;
   background-color: #ffffff;
   border-radius: 6%;
@@ -265,7 +265,7 @@
   font-size: 2.5rem;
 }
 .startups-pargraph {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #565e6d;
 }
 .cards-p {
@@ -277,7 +277,7 @@
 }
 
 .swiper {
-  max-width: 1600px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -344,6 +344,9 @@
   max-width: 40%;
   height: auto;
   margin: 0 auto;
+}
+.incu-p{
+  color: #565e6d;
 }
 
 /* SWIPER   */
@@ -571,7 +574,8 @@ swiper-container {
   }
   .hero-image {
     width: 330px;
-    height: 380px;
+    height: 330px;
+    margin: 0 auto;
   }
   .hero-container {
     max-width: 768px;
@@ -603,6 +607,8 @@ swiper-container {
   }
   .startups-pargraph {
     font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
   }
   .card-container {
     width: 380px;
@@ -620,6 +626,29 @@ swiper-container {
   }
   .inv-p {
     max-width: 700px;
+  }
+  .incu-p{
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .inv-p{
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .inv-logo{
+    width: 200px;
+    height: 200px;
+    margin: 15px 10px;
+  }
+  .text-container{
+    max-width: 390px;
+    margin: 0 auto;
+  }
+  .card-container{
+    width: 320px;
+    height: 430px;
   }
 }
 
@@ -722,6 +751,13 @@ swiper-container {
   .hero-container p {
     font-size: 1.5rem;
     margin-bottom: 50px;
+    max-width: 530px;
+  }
+  .incu-p{
+    font-size: 1.2rem;
+  }
+  .inv-p{
+    font-size: 1.2rem;
   }
   .hero-image {
     /* width: auto; */
@@ -735,17 +771,14 @@ swiper-container {
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin: 0 auto;
-    max-width: 400px;
+    margin: 10px auto;
+    max-width: 310px;
   }
   /* .cards {
     max-width: 768px;
     margin: 0 auto;
   } */
-  .inv-container {
-    /* margin-top: -30%; */
-    height: 100vh;
-  }
+
   .card-container {
     width: 350px;
     height: 400px;
@@ -766,8 +799,12 @@ swiper-container {
     margin: 0;
   }
   .inv-logo {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
+    margin: 10px 0 0;
+  }
+  .inv-logo img{
+    max-width: 110px;
   }
 }
 
@@ -801,7 +838,7 @@ swiper-container {
     margin: 0 auto;
   }
   .header-text {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .startups-pargraph {
     font-size: 1rem;
@@ -813,7 +850,7 @@ swiper-container {
     margin: 0 0 20px;
   }
   .faqs-header {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .faqs-p {
     font-size: 1rem;
@@ -823,23 +860,37 @@ swiper-container {
   }
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.2rem;
+    gap: 0.3rem;
     margin: 0 auto;
-    max-width: 340px;
+    max-width: 310px;
   }
   .inv-p {
     max-width: 300px;
   }
   .inv-logo {
-    width: 160px;
-    height: 160px;
+    width: 135px;
+    height: 135px;
+    margin: 20px 10px 10px;
   }
   .inv-logo img {
     max-width: 80px;
   }
-  .up-btn {
-    /* padding: 10px -200px 0 0; */
+  .inv-p{
+    font-size: 1rem;
   }
+  .incu-p{
+    font-size: 1rem;
+  }
+  .incubators{
+    height: 80vh;
+  }
+  .footer p{
+    font-size: 0.7rem;
+  }
+  .menu__link{
+    font-size: 0.8rem;
+  }
+
 }
 @media screen and (max-width: 350px) {
   .navbar {
@@ -853,10 +904,12 @@ swiper-container {
     margin: 10px;
   }
   .hero-container h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .hero-container p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    max-width: 280px;
+    margin: 0 auto 50px;
   }
   .startups-container {
     max-width: 400px;
@@ -869,13 +922,13 @@ swiper-container {
     font-size: 1.5rem;
   }
   .startups-pargraph {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.3rem;
     margin: 0 auto;
-    max-width: 260px;
+    max-width: 255px;
   }
   .inv-p {
     display: block;
@@ -884,6 +937,7 @@ swiper-container {
   .inv-logo {
     width: 130px;
     height: 130px;
+    margin: 30px 0 0;
   }
   .inv-logo img {
     max-width: 80px;
@@ -898,5 +952,20 @@ swiper-container {
   }
   .up-btn {
     padding: 100px 30px;
+  }
+  .inv-p{
+    font-size: 1rem;
+  }
+  .incu-p{
+    font-size: 1rem;
+  }
+  .incubators{
+    height: 80vh;
+  }
+  .footer p{
+    font-size: 0.7rem;
+  }
+  .menu__link{
+    font-size: 0.8rem;
   }
 }
