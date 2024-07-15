@@ -43,6 +43,7 @@ export default function Faqs() {
               aria-controls="panel1-content"
               id="panel1-header"
             >
+
               <Typography>Are startups worth investing in?</Typography>
             </AccordionSummary>
             <AccordionDetails>

@@ -167,7 +167,7 @@
 .card-wrapper {
   display: flex;
   justify-content: space-around;
-  margin: 0 50px 0 50px;
+  /* margin: 0 50px 0 50px; */
 }
 .instructions-svg1 {
   padding-top: 70px;
@@ -244,7 +244,7 @@
   background-color: #1769aa;
   color: white;
   border: none;
-  padding: 20px 60px;
+  padding: 25px 72px;
   margin-top: 20px;
   border-radius: 19px;
   cursor: pointer;
@@ -496,6 +496,7 @@ swiper-container {
   font-size: 2rem;
 }
 
+
 @media screen and (max-width: 1200px) {
   .burger-menu {
     display: none;
@@ -650,6 +651,9 @@ swiper-container {
     width: 320px;
     height: 430px;
   }
+  .startups-button{
+    padding: 25px 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -751,7 +755,6 @@ swiper-container {
   .hero-container p {
     font-size: 1.5rem;
     margin-bottom: 50px;
-    max-width: 530px;
   }
   .incu-p{
     font-size: 1.2rem;
@@ -855,8 +858,8 @@ swiper-container {
   .faqs-p {
     font-size: 1rem;
   }
-  .startups-button {
-    padding: 15px 30px;
+  .startups-button{
+    padding: 20px 40px;
   }
   .logo-container {
     grid-template-columns: repeat(2, 1fr);
@@ -889,6 +892,9 @@ swiper-container {
   }
   .menu__link{
     font-size: 0.8rem;
+  }
+  .text-container{
+    max-width: 350px;
   }
 
 }
@@ -967,5 +973,8 @@ swiper-container {
   }
   .menu__link{
     font-size: 0.8rem;
+  }
+  .startups-button{
+    padding: 20px 30px;
   }
 }
