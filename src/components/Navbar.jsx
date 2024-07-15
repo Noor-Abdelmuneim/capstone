@@ -119,33 +119,9 @@ const Navbar = () => {
           >
             <Link to="/incubators">Incubators</Link>
           </li>
+          
         </ul>
-        <div className={`nav-btns ${isOpen ? "active" : ""}`}>
-          <Stack spacing={1} direction="row">
-            <Link to="/signUp">
-              <Button
-                variant="outlined"
-                sx={{
-                  borderRadius: "9px",
-                  border: "2px solid #1769AA",
-                  margin: "2px",
-                  width: "208px",
-                  height: "44px",
-                  textTransform: "none",
-                  color: "#1769AA",
-                  fontFamily: "Arial, Helvetica, sans-serif",
-                  fontWeight: "bold",
-                  "&:hover": {
-                    backgroundColor: "#007bff3",
-                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                  },
-                }}
-              >
-                Register as a startup
-              </Button>
-            </Link>
-          </Stack>
-        </div>
+
       </div>
     </nav>
   );

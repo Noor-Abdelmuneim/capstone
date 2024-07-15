@@ -2,6 +2,7 @@
 const InstructionCards = () => {
     return (
         <div className="container">
+            <div className="instruction-content">
             <div className="instruction-container">
                 <h1 className="header-text">
                     How to Begin Investing in Startups with Our Guide
@@ -190,10 +191,11 @@ const InstructionCards = () => {
                     <div className="instructions-svg2">
                         <svg
                             width="100%"
-                            height="187"
+                            height="227"
                             viewBox="0 0 335 187"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
+                            
                         >
                             <g clip-path="url(#clip0_208_262)">
                                 <path
@@ -337,7 +339,7 @@ const InstructionCards = () => {
                     <div className="instructions-svg3">
                         <svg
                             width="100%"
-                            height="202"
+                            height="227"
                             viewBox="0 0 167 202"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -473,9 +475,10 @@ const InstructionCards = () => {
                     </div>
                     <div className="cards-text">
                         <h1 className="inst-header">{"Invest in Startups"}</h1>
-                        <p className="instructions-p">{"Connect with the company that meets your criteria and make your investment."}</p>
+                        <p className="instructions-p">{"Choose the company that meets your criteria and invest with them."}</p>
                     </div>
                 </div>
+            </div>
             </div>
 
         </div>

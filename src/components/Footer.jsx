@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import upBtn from "../photos/up-arrow (1).png";
 
 const Footer = () => {
     const scrollToTop = () => {
