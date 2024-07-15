@@ -166,10 +166,9 @@
 /* instructions-cards */
 
 .instruction-content{
-  height: 100vh;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px 0 80px;
 }
 .instruction-pargraph{
   font-size: 1.3rem;
@@ -237,16 +236,15 @@
 
 .main-container {
   max-width: 100%;
-  height: 100vh;
   margin: 0 auto;
   background-color: #f5f5f5;
+  padding: 40px;
 }
 
 .startups-container {
   text-align: center;
   margin-bottom: 20px 0;
   width: 100%;
-  padding-top: 30px;
   /* margin: 30px; */
 }
 .header-cards {
@@ -321,7 +319,6 @@
   padding: 20px;
   text-align: center;
   background-color: #f5f5f5;
-  height: 100vh;
 }
 .incubators-container {
   padding: 20px;
@@ -370,10 +367,10 @@ swiper-container {
 }
 
 .inv-container {
-  height: 100vh;
   max-width: 1600px;
   margin: 40px auto;
   text-align: center;
+  padding: 20px;
 }
 .inv-logo {
   margin: 50px 0 0 0;
@@ -462,12 +459,13 @@ swiper-container {
 .faqs-container {
   margin: 0 auto;
   background-color: #f5f5f5;
-  height: 100vh;
+
 }
 .faqs-content {
-  padding: 20px;
+  padding: 20px 0 100px;
   background-color: #f5f5f5;
-  /* max-width: 1600px; */
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
 }
 .faqs-text {
@@ -492,13 +490,9 @@ swiper-container {
   color: #565e6d;
 }
 .css-eqpfi5-MuiAccordionSummary-content {
-  padding: 20px;
+  width: 1100px;
+  padding: 30px 60px ;
 }
-.css-ahj2mt-MuiTypography-root {
-  color: #565e6d;
-  font-size: 2rem;
-}
-
 
 @media screen and (max-width: 1200px) {
   .burger-menu {
@@ -594,7 +588,7 @@ swiper-container {
     font-size: 1.2rem;
   }
   .faqs-content {
-    max-width: 768px;
+    max-width: 700px;
     width: 100%;
     margin: 0 auto;
   }
@@ -794,7 +788,7 @@ swiper-container {
     margin: 40px;
   }
   .faqs-content {
-    max-width: 576px;
+    max-width: 500px;
     margin: 0 auto;
   }
   .startups-container {
@@ -829,6 +823,9 @@ swiper-container {
   .navbar {
     max-width: 576px;
   }
+  .hero-container{
+    padding: 20px;
+  }
   .hero-container h1 {
     font-size: 1.5rem;
   }
@@ -847,7 +844,7 @@ swiper-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .faqs-content {
-    max-width: 450px;
+    max-width: 340px;
     margin: 0 auto;
   }
   .startups-container {
@@ -898,9 +895,7 @@ swiper-container {
   .incu-p{
     font-size: 1rem;
   }
-  .incubators{
-    height: 80vh;
-  }
+
   .footer p{
     font-size: 0.7rem;
   }
@@ -924,6 +919,9 @@ swiper-container {
   }
   .text-container {
     margin: 10px;
+  }
+  .hero-container{
+    padding: 20px;
   }
   .hero-container h1 {
     font-size: 1.5rem;
@@ -981,9 +979,6 @@ swiper-container {
   .incu-p{
     font-size: 1rem;
   }
-  .incubators{
-    height: 80vh;
-  }
   .footer p{
     font-size: 0.7rem;
   }
@@ -1005,5 +1000,9 @@ swiper-container {
   }
   .instructions-p{
     font-size: 1.1rem;
+  }
+  .faqs-content {
+    max-width: 300px;
+    margin: 0 auto;
   }
 }

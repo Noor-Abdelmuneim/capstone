@@ -27,6 +27,7 @@ export default function Faqs() {
         </div>
         <div className="faqs-q">
           <Accordion
+          elevation={0}
             expanded={expanded}
             onChange={handleExpansion}
             slots={{ transition: Fade }}
@@ -43,11 +44,19 @@ export default function Faqs() {
               aria-controls="panel1-content"
               id="panel1-header"
             >
-
-              <Typography>Are startups worth investing in?</Typography>
+              <Typography style={{ color: "#565e6d" ,fontSize: {
+                      xs: 18,
+                      sm: 20,
+                      md: 22,
+                      lg: 26,
+                      xl: 30,
+                    },
+                    fontWeight: "bold",}}>
+                <span style={{ marginRight: 5 , color: "#1769aa" , }}>01</span> Are startups worth investing in?
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography style={{maxWidth:"1000px", color: "#565e6d", margin: "0 auto", paddingBottom:"25px"}}>
                 Investing in startups can be highly rewarding, both financially
                 and personally. Startups have the potential for significant
                 growth and high returns, often outpacing more established
@@ -61,53 +70,78 @@ export default function Faqs() {
                 investors or financial advisors.
               </Typography>
             </AccordionDetails>
-          </Accordion>
-          <Accordion>
+          </Accordion >
+          <Accordion
+          elevation={0}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
-              <Typography>What is a startup?</Typography>
+              <Typography style={{ color: "#565e6d" ,fontSize: {
+                      xs: 18,
+                      sm: 20,
+                      md: 22,
+                      lg: 26,
+                      xl: 30,
+                    },
+                    fontWeight: "bold",}}>
+                <span style={{ marginRight: 5 , color: "#1769aa" }}>02</span> What is a startup?
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography style={{maxWidth:"1000px", color: "#565e6d", margin: "0 auto" , paddingBottom:"25px"}}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget.
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+          <Accordion elevation={0}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"
               id="panel1-header"
             >
-              <Typography>
-                What are the key steps to starting a business in Iraq?
+              <Typography style={{ color: "#565e6d" ,fontSize: {
+                      xs: 18,
+                      sm: 20,
+                      md: 22,
+                      lg: 26,
+                      xl: 30,
+                    },
+                    fontWeight: "bold",}}>
+                <span style={{ marginRight: 5 , color: "#1769aa"  }}>03</span> What are the key steps to starting a business in Iraq?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography style={{maxWidth:"1000px", color: "#565e6d", margin: "0 auto" ,paddingBottom:"25px"}}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget.
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion>
+
+          <Accordion elevation={0}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
-              <Typography>
-                How can I find mentors or advisors for my startup?
+              <Typography style={{ color: "#565e6d" ,fontSize: {
+                      xs: 18,
+                      sm: 20,
+                      md: 22,
+                      lg: 26,
+                      xl: 30,
+                    },
+                    fontWeight: "bold",}}>
+                <span style={{ marginRight: 5 , color: "#1769aa"  }}>04</span> How can I find mentors or advisors for my startup?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
+              <Typography style={{maxWidth:"1000px", color: "#565e6d", margin: "0 auto" , paddingBottom:"25px"}}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 eget.
