@@ -5,6 +5,8 @@ import {
   Container,
   Typography,
   Grid,
+  Select, 
+  MenuItem,
   FormControl,
   FormHelperText,
 } from "@mui/material";
@@ -12,22 +14,10 @@ import { Margin } from "@mui/icons-material";
 
 const RegistrationForm = () => {
   const [companyName, setCompanyName] = useState("");
-  const [founders, setFounders] = useState("");
-  const [businessAddress, setBusinessAddress] = useState("");
+  const [aboutCompany, setAboutCompany] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [businessNature, setBusinessNature] = useState("");
-  const [legalStructure, setLegalStructure] = useState("");
-  const [establishmentDate, setEstablishmentDate] = useState("");
   const [website, setWebsite] = useState("");
-  const [fundingStatus, setFundingStatus] = useState("");
-  const [employeesCount, setEmployeesCount] = useState("");
-  const [primaryMarket, setPrimaryMarket] = useState("");
-  const [productsServices, setProductsServices] = useState("");
-  const [annualRevenue, setAnnualRevenue] = useState("");
-  const [futurePlans, setFuturePlans] = useState("");
   const [howDidYouHear, setHowDidYouHear] = useState("");
-
   const [formErrors, setFormErrors] = useState({
     companyName: false,
     email: false,
@@ -39,42 +29,29 @@ const RegistrationForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Validate required fields
+
     const errors = {
       companyName: !companyName,
       email: !email,
-      phone: !phone,
-      businessNature: !businessNature,
       howDidYouHear: !howDidYouHear,
+      aboutCompany: !aboutCompany,
     };
 
     setFormErrors(errors);
 
-    // Check if there are any errors
+
     if (Object.values(errors).some((error) => error)) {
-      return; // Do not submit if there are errors
+      return;
     }
 
-    // Handle form submission logic here
     console.log({
       companyName,
-      founders,
-      businessAddress,
+      aboutCompany,
       email,
-      phone,
-      businessNature,
-      legalStructure,
-      establishmentDate,
       website,
-      fundingStatus,
-      employeesCount,
-      primaryMarket,
-      productsServices,
-      annualRevenue,
-      futurePlans,
       howDidYouHear,
     });
-    // You can send this data to a backend API or perform any other actions as needed
+    // backend API 
   };
 
   return (
@@ -92,7 +69,7 @@ const RegistrationForm = () => {
       </Typography>
       <form onSubmit={handleSubmit}>
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <TextField
               label="Company Name *"
               fullWidth
@@ -102,23 +79,17 @@ const RegistrationForm = () => {
               helperText={formErrors.companyName && "Company Name is required"}
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12}>
             <TextField
-              label="Founders"
+              label="About *"
               fullWidth
-              value={founders}
-              onChange={(e) => setFounders(e.target.value)}
+              value={aboutCompany}
+              onChange={(e) => setAboutCompany(e.target.value)}
+              error={formErrors.aboutCompany}
+              helperText={formErrors.aboutCompany && "About Company is required"}
             />
           </Grid>
           <Grid item xs={12}>
-            <TextField
-              label="Business Address"
-              fullWidth
-              value={businessAddress}
-              onChange={(e) => setBusinessAddress(e.target.value)}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
             <TextField
               label="Email Address *"
               fullWidth
@@ -126,44 +97,6 @@ const RegistrationForm = () => {
               onChange={(e) => setEmail(e.target.value)}
               error={formErrors.email}
               helperText={formErrors.email && "Email Address is required"}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              label="Phone Number *"
-              fullWidth
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
-              error={formErrors.phone}
-              helperText={formErrors.phone && "Phone Number is required"}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              label="Nature of Business *"
-              fullWidth
-              value={businessNature}
-              onChange={(e) => setBusinessNature(e.target.value)}
-              error={formErrors.businessNature}
-              helperText={
-                formErrors.businessNature && "Nature of Business is required"
-              }
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              label="Legal Structure"
-              fullWidth
-              value={legalStructure}
-              onChange={(e) => setLegalStructure(e.target.value)}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              label="Date of Establishment"
-              fullWidth
-              value={establishmentDate}
-              onChange={(e) => setEstablishmentDate(e.target.value)}
             />
           </Grid>
           <Grid item xs={12}>
@@ -174,68 +107,28 @@ const RegistrationForm = () => {
               onChange={(e) => setWebsite(e.target.value)}
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              label="Funding Status"
-              fullWidth
-              value={fundingStatus}
-              onChange={(e) => setFundingStatus(e.target.value)}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              label="Number of Employees"
-              fullWidth
-              value={employeesCount}
-              onChange={(e) => setEmployeesCount(e.target.value)}
-            />
-          </Grid>
           <Grid item xs={12}>
-            <TextField
-              label="Primary Market"
-              fullWidth
-              value={primaryMarket}
-              onChange={(e) => setPrimaryMarket(e.target.value)}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              label="Products or Services Offered"
-              fullWidth
-              multiline
-              rows={4}
-              value={productsServices}
-              onChange={(e) => setProductsServices(e.target.value)}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              label="Annual Revenue"
-              fullWidth
-              value={annualRevenue}
-              onChange={(e) => setAnnualRevenue(e.target.value)}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField
-              label="Future Plans and Objectives"
-              fullWidth
-              multiline
-              rows={4}
-              value={futurePlans}
-              onChange={(e) => setFuturePlans(e.target.value)}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <TextField
-              label="How did you hear about us? *"
-              fullWidth
-              value={howDidYouHear}
-              onChange={(e) => setHowDidYouHear(e.target.value)}
-              error={formErrors.howDidYouHear}
-              helperText={formErrors.howDidYouHear && "This field is required"}
-            />
-          </Grid>
+  <FormControl fullWidth error={formErrors.howDidYouHear}>
+    <Select
+      value={howDidYouHear}
+      onChange={(e) => setHowDidYouHear(e.target.value)}
+      displayEmpty
+      fullWidth
+    >
+      <MenuItem value="" disabled>
+        How did you hear about us? *
+      </MenuItem>
+      <MenuItem value="Website">Website</MenuItem>
+      <MenuItem value="Social Media">Social Media</MenuItem>
+      <MenuItem value="Friend or Colleague">Friend or Colleague</MenuItem>
+      <MenuItem value="Other">Other</MenuItem>
+    </Select>
+    {formErrors.howDidYouHear && (
+      <FormHelperText>This field is required</FormHelperText>
+    )}
+  </FormControl>
+</Grid>
+
         </Grid>
         <Button
           type="submit"
