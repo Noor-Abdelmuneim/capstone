@@ -38,6 +38,7 @@ const Incubators = () => {
             <Swiper
               spaceBetween={30}
               centeredSlides={true}
+              loop={true}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
@@ -45,6 +46,24 @@ const Incubators = () => {
               pagination={{
                 clickable: true,
               }}
+              breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+        }}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
               onAutoplayTimeLeft={onAutoplayTimeLeft}
@@ -65,7 +84,7 @@ const Incubators = () => {
                   rel="noopener noreferrer"
                   href="https://www.orangecorners.com/country/baghdad-iraq/"
                 >
-                  <img src={orangecorners} alt="kapitaLogo" />
+                  <img src={orangecorners} alt="orangecorners" />
                 </a>
               </div></SwiperSlide>
               <SwiperSlide><div className="incu-logo">
@@ -74,7 +93,7 @@ const Incubators = () => {
                   rel="noopener noreferrer"
                   href="https://the-station.iq/"
                 >
-                  <img src={thestation} alt="kapitaLogo" />
+                  <img src={thestation} alt="thestation" />
                 </a>
               </div></SwiperSlide>
               <SwiperSlide><div className="incu-logo">
@@ -83,7 +102,7 @@ const Incubators = () => {
                   rel="noopener noreferrer"
                   href="https://makersiq.org/"
                 >
-                  <img src={makers} alt="kapitaLogo" />
+                  <img src={makers} alt="makers" />
                 </a>
               </div></SwiperSlide>
               <SwiperSlide><div className="incu-logo">
@@ -92,7 +111,7 @@ const Incubators = () => {
                   rel="noopener noreferrer"
                   href="https://www.facebook.com/hub200.tiq/"
                 >
-                  <img src={hub200} alt="kapitaLogo" />
+                  <img src={hub200} alt="hub200" />
                 </a>
               </div></SwiperSlide>
               <SwiperSlide><div className="incu-logo">

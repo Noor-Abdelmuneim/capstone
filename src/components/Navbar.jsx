@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Button, Stack } from "@mui/material";
+import { Button } from "@mui/material";
 
 const Navbar = () => {
   const location = useLocation();
@@ -114,10 +114,10 @@ const Navbar = () => {
           </li>
           <li
             className={`nav-item ${
-              location.pathname === "/incubators" ? "active" : ""
+              location.pathname === "/IncubatorsPage" ? "active" : ""
             }`}
           >
-            <Link to="/incubators">Incubators</Link>
+            <Link to="/IncubatorsPage">Incubators</Link>
           </li>
         </ul>
         <div className={`nav-btns ${isOpen ? "active" : ""}`}>

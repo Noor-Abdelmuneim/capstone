@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import companypic from "../components/Assets/Building-cuate.png.jpg";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

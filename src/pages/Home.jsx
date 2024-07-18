@@ -14,7 +14,6 @@ const Home = () => {
       <Instructions /> 
       <Incubators />
       <Investors />
-
       <Faqs />
       <Footer/>
     </>
