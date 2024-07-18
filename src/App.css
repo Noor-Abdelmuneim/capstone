@@ -39,7 +39,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -217,7 +217,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .instruction-container {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .instructions-p {
@@ -600,6 +600,10 @@ swiper-container {
   }
   .nav-content{
     max-width: 768px;
+    padding: 0 10px;
+  }
+  .navbar-header{
+    max-width: 768px;
   }
   .hero-image {
     width: 330px;
@@ -698,6 +702,9 @@ swiper-container {
     align-items: center;
     padding: 10px;
   }
+  .nav-content{
+    justify-content: center;
+  }
 
   .navbar-nav {
     display: flex;
@@ -791,9 +798,7 @@ swiper-container {
   .inv-p{
     font-size: 1.2rem;
   }
-  .hero-image {
-    /* width: auto; */
-  }
+
   .hero-btns {
     display: flex;
     justify-content: center;
@@ -806,10 +811,6 @@ swiper-container {
     margin: 10px auto;
     max-width: 310px;
   }
-  /* .cards {
-    max-width: 768px;
-    margin: 0 auto;
-  } */
 
   .card-container {
     width: 350px;

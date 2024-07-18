@@ -47,23 +47,23 @@ const Incubators = () => {
                 clickable: true,
               }}
               breakpoints={{
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-          },
-          1200: {
-            slidesPerView: 1,
-            spaceBetween: 40,
-          },
-        }}
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                },
+                1200: {
+                  slidesPerView: 1,
+                  spaceBetween: 40,
+                },
+              }}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
               onAutoplayTimeLeft={onAutoplayTimeLeft}
