@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "companyName": "Baghdad Tech Solutions",
+        "aboutCompany": "Baghdad Tech Solutions specializes in providing innovative IT solutions to businesses in Iraq, focusing on cloud services and cybersecurity.",
+        "email": "info@baghdadtechsolutions.com",
+        "website": "http://www.baghdadtechsolutions.com"
+    },
+    {
+        "id": 2,
+        "companyName": "Erbil E-commerce Ventures",
+        "aboutCompany": "Erbil E-commerce Ventures is a startup based in Erbil, Iraq, aiming to revolutionize online shopping experiences for local consumers.",
+        "email": "contact@erbilecommerce.com",
+        "website": "http://www.erbilecommerce.com"
+    },
+    {
+        "id": 3,
+        "companyName": "Basra Renewable Energy Solutions",
+        "aboutCompany": "Basra Renewable Energy Solutions focuses on renewable energy projects in Basra, Iraq, promoting sustainable development and energy independence.",
+        "email": "info@basrarenewables.com",
+        "website": "http://www.basrarenewables.com"
+    },
+    {
+        "id": 4,
+        "companyName": "Mosul Data Analytics",
+        "aboutCompany": "Mosul Data Analytics offers advanced data analysis services to businesses in Mosul, Iraq, helping them make informed decisions based on data-driven insights.",
+        "email": "contact@mosuldataanalytics.com",
+        "website": "http://www.mosuldataanalytics.com"
+    },
+    {
+        "id": 5,
+        "companyName": "Kirkuk HealthTech Innovations",
+        "aboutCompany": "Kirkuk HealthTech Innovations develops cutting-edge healthcare technologies in Kirkuk, Iraq, to improve patient care and medical diagnostics.",
+        "email": "info@kirkukhealthtech.com",
+        "website": "http://www.kirkukhealthtech.com"
+    },
+    {
+        "id": 6,
+        "companyName": "Najaf AgriTech Solutions",
+        "aboutCompany": "Najaf AgriTech Solutions focuses on agricultural technology solutions in Najaf, Iraq, to enhance farming productivity and sustainability.",
+        "email": "contact@najafagritech.com",
+        "website": "http://www.najafagritech.com"
+    },
+    {
+        "id": 7,
+        "companyName": "Sulaymaniyah AI Technologies",
+        "aboutCompany": "Sulaymaniyah AI Technologies specializes in artificial intelligence research and applications in Sulaymaniyah, Iraq, advancing automation and machine learning.",
+        "email": "info@sulaymaniyahai.com",
+        "website": "http://www.sulaymaniyahai.com"
+    },
+    {
+        "id": 8,
+        "companyName": "Diyala Clean Energy Solutions",
+        "aboutCompany": "Diyala Clean Energy Solutions develops renewable energy projects in Diyala, Iraq, focusing on solar and wind energy solutions for sustainable power generation.",
+        "email": "contact@diyalacleanenergy.com",
+        "website": "http://www.diyalacleanenergy.com"
+    },
+    {
+        "id": 9,
+        "companyName": "Fallujah Robotics Innovations",
+        "aboutCompany": "Fallujah Robotics Innovations designs and manufactures robotics solutions for industrial applications in Fallujah, Iraq, optimizing manufacturing processes and efficiency.",
+        "email": "info@fallujahrobotics.com",
+        "website": "http://www.fallujahrobotics.com"
+    },
+    {
+        "id": 10,
+        "companyName": "Anbar Blockchain Solutions",
+        "aboutCompany": "Anbar Blockchain Solutions provides blockchain development services in Anbar, Iraq, aiming to revolutionize digital transactions and secure data management.",
+        "email": "contact@anbarblockchain.com",
+        "website": "http://www.anbarblockchain.com"
+    }
+]

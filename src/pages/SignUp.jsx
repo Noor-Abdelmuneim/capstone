@@ -5,7 +5,7 @@ import {
   Container,
   Typography,
   Grid,
-  Select, 
+  Select,
   MenuItem,
   FormControl,
   FormHelperText,
@@ -108,26 +108,27 @@ const RegistrationForm = () => {
             />
           </Grid>
           <Grid item xs={12}>
-  <FormControl fullWidth error={formErrors.howDidYouHear}>
-    <Select
-      value={howDidYouHear}
-      onChange={(e) => setHowDidYouHear(e.target.value)}
-      displayEmpty
-      fullWidth
-    >
-      <MenuItem value="" disabled>
-        How did you hear about us? *
-      </MenuItem>
-      <MenuItem value="Website">Website</MenuItem>
-      <MenuItem value="Social Media">Social Media</MenuItem>
-      <MenuItem value="Friend or Colleague">Friend or Colleague</MenuItem>
-      <MenuItem value="Other">Other</MenuItem>
-    </Select>
-    {formErrors.howDidYouHear && (
-      <FormHelperText>This field is required</FormHelperText>
-    )}
-  </FormControl>
-</Grid>
+            <FormControl fullWidth error={formErrors.howDidYouHear}>
+              <Select
+                value={howDidYouHear}
+                onChange={(e) => setHowDidYouHear(e.target.value)}
+                displayEmpty
+                fullWidth
+              >
+                <MenuItem value="" disabled>
+                  How did you hear about us? *
+                </MenuItem>
+                <MenuItem value="Website">Website</MenuItem>
+                <MenuItem value="Social Media">Social Media</MenuItem>
+                <MenuItem value="Friend or Colleague">Friend or Colleague</MenuItem>
+                <MenuItem value="Other">Other</MenuItem>
+              </Select>
+              {formErrors.howDidYouHear && (
+                <FormHelperText>This field is required</FormHelperText>
+              )}
+            </FormControl>
+          </Grid>
+          <div></div>
 
         </Grid>
         <Button

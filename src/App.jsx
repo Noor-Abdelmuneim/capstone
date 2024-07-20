@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp";
 import Incubators from "./pages/Incubators";
 import { register } from 'swiper/element/bundle';
 import IncubatorsPage from "./pages/IncubatorsPage";
+import SingleCard from "./pages/SingleCard";
 register();
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/cardspage" element={<CardsPage />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/IncubatorsPage" element={<IncubatorsPage />} />
+          <Route path="/startup" element={<SingleCard />} />
         </Routes>
       </BrowserRouter>
     </div>
