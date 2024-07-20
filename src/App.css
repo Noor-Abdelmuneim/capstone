@@ -33,7 +33,6 @@
   background-color: #f0f0f0;
   padding: 10px;
 }
-
 .nav-content {
   max-width: 1400px;
   width: 100%;
@@ -70,9 +69,7 @@
   font-weight: bold;
   color: #1769aa;
 }
-.nav-btns{
-  /* padding-left: 50%; */
-}
+
 /* hero section */
 
 .hero-container {
@@ -479,8 +476,8 @@ swiper-container {
 }
 .up-btn {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 70px;
+  /* right: 10px; */
   z-index: 1000;
   cursor: pointer;
 }
@@ -976,7 +973,7 @@ swiper-container {
     margin: 0;
     padding: 20px;
   }
-  
+
   
 
 }
@@ -1076,4 +1073,5 @@ swiper-container {
     max-width: 300px;
     margin: 0 auto;
   }
+
 }
