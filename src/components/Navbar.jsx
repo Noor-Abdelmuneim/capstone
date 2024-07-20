@@ -88,9 +88,6 @@ const Navbar = () => {
               />
             </svg>
           </Link>
-          <button className="burger-menu" onClick={toggleMenu}>
-            <span className="burger-icon"></span>
-          </button>
         </div>
         <ul className={`navbar-nav ${isOpen ? "active" : ""}`}>
           <li
@@ -144,6 +141,9 @@ const Navbar = () => {
               </Button>
             </Link>
         </div>
+        <button className="burger-menu" onClick={toggleMenu}>
+            <span className="burger-icon"></span>
+          </button>
       </div>
     </nav>
   );

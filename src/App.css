@@ -70,7 +70,9 @@
   font-weight: bold;
   color: #1769aa;
 }
-
+.nav-btns{
+  /* padding-left: 50%; */
+}
 /* hero section */
 
 .hero-container {
@@ -592,6 +594,9 @@ swiper-container {
 .cards-container{
   height: 540px;
 }
+.instruction-content{
+  max-width: 900px;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -619,6 +624,13 @@ swiper-container {
   }
   .hero-container p {
     font-size: 1.2rem;
+  }
+  .instruction-content{
+    max-width: 700px;
+  }
+  .instruction-pargraph{
+    max-width: 500px;
+    margin: 0 auto;
   }
   .faqs-content {
     max-width: 700px;
@@ -693,17 +705,11 @@ swiper-container {
     display: flex;
     flex-direction: column;
     /* max-width: 768px; */
-
   }
 
   .navbar-header {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 10px;
-  }
-  .nav-content{
-    justify-content: center;
   }
 
   .navbar-nav {
@@ -789,11 +795,13 @@ swiper-container {
     font-size: 2.5rem;
   }
   .hero-container p {
-    font-size: 1.5rem;
-    margin-bottom: 50px;
+    font-size: 1.3rem;
+    margin: 0 auto 50px;
+    max-width: 500px;
   }
   .incu-p{
     font-size: 1.2rem;
+    max-width: 500px;
   }
   .inv-p{
     font-size: 1.2rem;
@@ -825,6 +833,9 @@ swiper-container {
     max-width: 576px;
     margin: 0 auto;
   }
+  .startups-pargraph{
+    max-width: 500px;
+  }
   .inv-p {
     max-width: 500px;
   }
@@ -854,13 +865,21 @@ swiper-container {
     max-width: 576px;
   }
   .hero-container{
-    padding: 20px;
+    /* padding: 20px; */
+    height: 110vh;
   }
   .hero-container h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .hero-container p {
     font-size: 1rem;
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
+  .instruction-pargraph{
+    font-size: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
   }
   .hero-image {
     width: auto;
@@ -874,15 +893,15 @@ swiper-container {
     grid-template-columns: repeat(1, 1fr);
   }
   .faqs-content {
-    max-width: 340px;
+    max-width: 350px;
     margin: 0 auto;
   }
   .startups-container {
-    max-width: 450px;
+    max-width: 350px;
     margin: 0 auto;
   }
   .header-text {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .startups-pargraph {
     font-size: 1rem;
@@ -894,10 +913,12 @@ swiper-container {
     margin: 0 0 20px;
   }
   .faqs-header {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .faqs-p {
     font-size: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
   }
   .startups-button{
     padding: 20px 40px;
@@ -909,6 +930,9 @@ swiper-container {
     max-width: 310px;
   }
   .inv-p {
+    max-width: 350px;
+    font-size: 1rem;
+    margin: 0 auto 10px;
     max-width: 300px;
   }
   .inv-logo {
@@ -919,10 +943,8 @@ swiper-container {
   .inv-logo img {
     max-width: 80px;
   }
-  .inv-p{
-    font-size: 1rem;
-  }
   .incu-p{
+    max-width: 300px;
     font-size: 1rem;
   }
 
@@ -934,6 +956,25 @@ swiper-container {
   }
   .text-container{
     max-width: 350px;
+  }
+  .inst-header{
+    font-size: 1.8rem;
+  }
+  .instructions-p{
+    font-size: 1.2rem;
+  }
+  .container{
+    padding: 20px;
+  }
+  .main-container{
+    padding: 20px;
+  }
+  .instruction-content{
+    padding: 20px;
+  }
+  .inv-container{
+    margin: 0;
+    padding: 20px;
   }
   
   
