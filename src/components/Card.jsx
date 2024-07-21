@@ -18,9 +18,6 @@ export default function Card({ name, description, picture, email }) {
             <p className="email">{email}</p>
           </a>
         </div>
-        <Link to="https://www.google.co.uk/" target="_blank" rel="noopener noreferrer">
-          <button className="visit-button">Visit Website</button>
-        </Link>
       </div>
     </div>
   );

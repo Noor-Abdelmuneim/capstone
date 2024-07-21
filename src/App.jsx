@@ -22,9 +22,9 @@ function App() {
           <Route path="/startups" element={<Startups />} />
           <Route path="/investors" element={<Investors />} />
           <Route path="/incubators" element={<Incubators />} />
-          <Route path="/cardspage" element={<CardsPage />} />
+          <Route path="/cardsPage" element={<CardsPage />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/IncubatorsPage" element={<IncubatorsPage />} />
+          <Route path="/incubatorsPage" element={<IncubatorsPage />} />
           <Route path="/startup" element={<SingleCard />} />
         </Routes>
       </BrowserRouter>

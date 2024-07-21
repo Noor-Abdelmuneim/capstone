@@ -111,10 +111,10 @@ const Navbar = () => {
           </li>
           <li
             className={`nav-item ${
-              location.pathname === "/IncubatorsPage" ? "active" : ""
+              location.pathname === "/incubatorsPage" ? "active" : ""
             }`}
           >
-            <Link to="/IncubatorsPage">Incubators</Link>
+            <Link to="/incubatorsPage">Incubators</Link>
           </li>
         </ul>
         <div className={`nav-btns ${isOpen ? "active" : ""}`}>

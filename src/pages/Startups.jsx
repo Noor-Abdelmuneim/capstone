@@ -95,7 +95,7 @@ const Startups = () => {
         </SwiperSlide>
       </Swiper>
       <div className="startups-container">
-        <Link to="/cardspage">
+        <Link to="/cardsPage">
           <button className="startups-button">Explore Now</button>
         </Link>
       </div>

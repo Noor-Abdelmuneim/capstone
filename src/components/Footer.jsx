@@ -16,7 +16,7 @@ const Footer = () => {
           <svg
             onClick={scrollToTop}
             width="252"
-            height="248"
+            height="150"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -149,23 +149,23 @@ const Footer = () => {
           </Link>
         </div>
         <ul class="menu">
-          <li class="menu__item">
+          <li>
             <Link to="/" className="menu__link">
               Home
             </Link>
           </li>
-          <li class="menu__item">
-            <Link to="startups" className="menu__link">
+          <li>
+            <Link to="/cardsPage" className="menu__link">
               Startups
             </Link>
           </li>
-          <li class="menu__item">
-            <Link to="investors" className="menu__link">
+          <li>
+            <Link to="/investors" className="menu__link">
               Investors
             </Link>
           </li>
-          <li class="menu__item">
-            <Link to="Incubators" className="menu__link">
+          <li>
+            <Link to="/incubatorsPage" className="menu__link">
               Incubators
             </Link>
           </li>
