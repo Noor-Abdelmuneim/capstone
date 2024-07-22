@@ -76,11 +76,10 @@ const RegistrationForm = () => {
         style={{
           color: "#1769aa",
           fontSize: "1.8rem",
-          display:"flex",
-          justifyContent:"center",
+          display: "flex",
+          justifyContent: "center",
           margin: "20px 0",
         }}
-        className="form-title"
       >
         <b className="form-title">Startup Company Registration Form</b>
       </Typography>
