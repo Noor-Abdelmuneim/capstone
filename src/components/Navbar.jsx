@@ -117,7 +117,7 @@ const Navbar = () => {
             <Link to="/incubatorsPage">Incubators</Link>
           </li>
         </ul>
-        <div className={`nav-btns ${isOpen ? "active" : ""}`}>
+        <div className="nav-btns">
             <Link to="/signUp">
               <Button
                 variant="outlined"
