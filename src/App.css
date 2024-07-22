@@ -72,7 +72,6 @@
   font-size: 1.2rem;
 }
 
-
 /* hero section */
 
 .hero-container {
@@ -838,6 +837,9 @@ swiper-container {
   .nav-btns{
     display: none;
   }
+  .form-title{
+    font-size: 1.6rem;
+  }
 
   .hero-container {
     flex-direction: column-reverse;
@@ -951,6 +953,9 @@ swiper-container {
   }
   .logo-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .form-title{
+    font-size: 1.4rem;
   }
   .faqs-content {
     max-width: 350px;
