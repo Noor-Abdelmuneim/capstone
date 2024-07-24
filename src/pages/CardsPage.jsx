@@ -46,10 +46,7 @@ const CardsPage = () => {
               key={startup.id} 
               name={startup.Company_Name}
               description={startup.About}
-              businessNature={startup.business_nature}
               image={startup.img}
-              email={startup.email}
-              website={startup.website}
             />
           ))}
         </div>

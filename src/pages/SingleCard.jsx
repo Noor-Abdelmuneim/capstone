@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import companypic from "../components/Assets/Münster,_LVM,_Bürogebäude_--_2013_--_5149-51.jpg"
 
