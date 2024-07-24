@@ -71,6 +71,12 @@
   color: #1769aa;
   font-size: 1.2rem;
 }
+.burger-menu {
+  display: none;
+}
+.burger-icon {
+  display: none;
+}
 
 /* hero section */
 
@@ -241,8 +247,9 @@
 
 .inst-header {
   color: #1769aa;
-  max-width: 800px;
-  margin: -20px 0 20px;
+  max-width: 500px;
+  margin: -25px 0 10px;
+  font-size: 1.8rem;
 }
 
 /* Startups page */
@@ -626,12 +633,6 @@ swiper-container {
 }
 
 @media screen and (max-width: 1200px) {
-  .burger-menu {
-    display: none;
-  }
-  .burger-icon {
-    display: none;
-  }
   .hero-container {
     max-width: 992px;
     margin: 0 auto;
@@ -921,7 +922,7 @@ swiper-container {
   }
   .cards-container {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin: 15px auto;
   }
   .inv-logo {
@@ -1038,7 +1039,7 @@ swiper-container {
     font-size: 1.8rem;
   }
   .instructions-p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .container {
     padding: 20px;
@@ -1143,9 +1144,6 @@ swiper-container {
   }
   .inst-header {
     font-size: 1.5rem;
-  }
-  .instructions-p {
-    font-size: 1.1rem;
   }
   .faqs-content {
     max-width: 300px;

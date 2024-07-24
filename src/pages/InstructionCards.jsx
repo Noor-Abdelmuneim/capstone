@@ -5,11 +5,10 @@ const InstructionCards = () => {
             <div className="instruction-content">
             <div className="instruction-container">
                 <h1 className="header-text">
-                    How to Begin Investing in Startups with Our Guide
+                Register Your Startup and Showcase to Investors
                 </h1>
                 <p className="instruction-pargraph">
-                    Follow these steps to register and find the right company for
-                    investment:
+                Follow these simple steps to register your company on our platform and showcase it to potential investors:
                 </p>
             </div>
             <div className="card-wrapper">
@@ -183,8 +182,8 @@ const InstructionCards = () => {
                     </svg>
                     </div>
                     <div className="cards-text">
-                        <h1 className="inst-header">{"Create an Account"}</h1>
-                        <p className="instructions-p">{"Sign up for a free investor account to get started."}</p>
+                        <h1 className="inst-header">{"Register your startup company"}</h1>
+                        <p className="instructions-p">{"Click 'Register as a Startup' on our homepage to begin."}</p>
                     </div>
                 </div>
                 <div className="cards-container">
@@ -331,8 +330,8 @@ const InstructionCards = () => {
                         </svg>
                     </div>
                     <div className="cards-text">
-                        <h1 className="inst-header">{"Browse"}</h1>
-                        <p className="instructions-p">{"Explore various investment opportunities."}</p>
+                        <h1 className="inst-header">{"Fill Out the Required Information"}</h1>
+                        <p className="instructions-p">{"Fill out the registration form with detailed startup information to attract investors."}</p>
                     </div>
                 </div>
                 <div className="cards-container">
@@ -474,8 +473,8 @@ const InstructionCards = () => {
                         </svg>
                     </div>
                     <div className="cards-text">
-                        <h1 className="inst-header">{"Invest in Startups"}</h1>
-                        <p className="instructions-p">{"Choose the company that meets your criteria and invest with them."}</p>
+                        <h1 className="inst-header">{"Application Review"}</h1>
+                        <p className="instructions-p">{"We'll review your application carefully to ensure it meets our platform's listing criteria."}</p>
                     </div>
                 </div>
             </div>
