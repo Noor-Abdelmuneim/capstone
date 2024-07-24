@@ -111,11 +111,11 @@
 /* Cards */
 
 .card-container {
-  width: 350px;
-  height: 440px;
+  max-width: 350px;
+  max-height: 580px;
   background-color: #ffffff;
   border-radius: 6%;
-  margin: 15px 0;
+  margin: 15px;
   display: grid;
   grid-template-columns: 1fr;
   border: 1px solid #e6e6e6;
@@ -127,31 +127,39 @@
   border-color: #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.card-text {
+.card-content {
   padding: 7px 10px 0;
   text-align: left;
   max-width: 400px;
   margin: 0 auto;
 }
-.h-card {
+.card-title {
   color: #565e6d;
   font-size: 1.5rem;
 }
-.p-card {
+.card-description {
   color: #9095a1;
   font-size: 1rem;
-  margin-top: 10px;
+  margin: 10px 0 5px;
+  line-height: 1.5;
 }
-.card-container img {
+.card-image {
   width: 100%;
-  border-radius: 10% 10% 0 0;
+  height: 290px;
+  margin: 0 auto;
+  border-radius: 6% 6% 0 0;
+}
+.business-nature {
+  font-style: italic;
+  color: #000000;
+  margin-top: 10px;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 .cards-page {
@@ -265,18 +273,27 @@
   font-weight: bold;
 }
 .email-link {
-  text-decoration: none; 
-  color: #007bff; 
-  display: inline-block; 
-  transition: color 0.3s ease; 
+  text-decoration: none;
+  color: #007bff;
+  display: inline-block;
+  transition: color 0.3s ease;
 }
 
 .email-link:hover {
-  color: #0056b3; 
+  color: #0056b3;
+}
+.website-link {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.website-link:hover {
+  text-decoration: underline;
 }
 
 .startups-button {
-  background-color: #1769AA;
+  background-color: #1769aa;
   color: white;
   border: none;
   padding: 22px 62px;
@@ -289,8 +306,8 @@
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
 }
-.startups-button:hover{
-  background-color: #2980B9;
+.startups-button:hover {
+  background-color: #2980b9;
 }
 
 /* Startup page cards button */
@@ -596,7 +613,6 @@ swiper-container {
   max-width: 1200px;
 }
 
-
 @media screen and (max-width: 1200px) {
   .burger-menu {
     display: none;
@@ -627,8 +643,7 @@ swiper-container {
     margin-top: 30px;
   }
   .card-container {
-    width: 380px;
-    height: 430px;
+    height: 550px;
   }
   .header-text {
     font-size: 2.5rem;
@@ -727,10 +742,6 @@ swiper-container {
     max-width: 600px;
     margin: 0 auto;
   }
-  .card-container {
-    width: 380px;
-    height: 430px;
-  }
   .startups-button {
     padding: 25px 60px;
   }
@@ -763,8 +774,7 @@ swiper-container {
     margin: 0 auto;
   }
   .card-container {
-    width: 320px;
-    height: 430px;
+    height: 590px;
   }
 }
 
@@ -787,7 +797,6 @@ swiper-container {
     transition: max-height 0.3s ease-out;
     margin: 0;
   }
-
 
   .navbar-nav.active {
     max-height: 200px;
@@ -834,10 +843,10 @@ swiper-container {
     transform-origin: bottom left;
     transform: translateY(6px) rotate(0);
   }
-  .nav-btns{
+  .nav-btns {
     display: none;
   }
-  .form-title{
+  .form-title {
     font-size: 1.6rem;
   }
 
@@ -878,11 +887,6 @@ swiper-container {
     max-width: 310px;
   }
 
-  .card-container {
-    width: 350px;
-    height: 400px;
-    margin: 40px;
-  }
   .faqs-content {
     max-width: 500px;
     margin: 0 auto;
@@ -954,7 +958,7 @@ swiper-container {
   .logo-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .form-title{
+  .form-title {
     font-size: 1.4rem;
   }
   .faqs-content {
@@ -972,11 +976,7 @@ swiper-container {
     font-size: 1rem;
     margin: 0 50px;
   }
-  .card-container {
-    width: 250px;
-    height: 380px;
-    margin: 0 0 20px;
-  }
+
   .faqs-header {
     font-size: 1.7rem;
   }
@@ -1040,6 +1040,12 @@ swiper-container {
   .inv-container {
     margin: 0;
     padding: 20px;
+  }
+  .header-cards {
+    font-size: 2rem;
+  }
+  .cards-p {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 350px) {

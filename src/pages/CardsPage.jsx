@@ -1,32 +1,61 @@
+import { useState, useEffect } from "react";
 import Card from "../components/Card";
-import companypic from "../components/Assets/Building-cuate.png.jpg";
-import Pagination from '@mui/material/Pagination';
-import PaginationItem from '@mui/material/PaginationItem';
-import Stack from '@mui/material/Stack';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Pagination from "@mui/material/Pagination";
+import PaginationItem from "@mui/material/PaginationItem";
+import Stack from "@mui/material/Stack";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Footer from "../components/Footer";
 
 const CardsPage = () => {
+  const [startups, setStartups] = useState([]);
+
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        "https://x8ki-letl-twmt.n7.xano.io/api:1cUXcVZQ/startups"
+      );
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data = await response.json();
+      setStartups(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  
+
   return (
     <>
       <div className="startups-container">
         <h1 className="header-cards">Startups in the Iraqi Market</h1>
-        <p className="cards-p">Explore a vibrant community of Iraqi startups driving innovation in technology, energy, healthcare, education, and e-commerce, influencing Iraq's dynamic business landscape and promising future.</p>
+        <p className="cards-p">
+          Explore a vibrant community of Iraqi startups driving innovation in
+          technology, energy, healthcare, education, and e-commerce, influencing
+          Iraq's dynamic business landscape and promising future.
+        </p>
         <div className="cards">
-          {[...Array(12)].map((_, index) => (
+          {startups.map((startup) => (
             <Card
-              key={index}
-              name="Company name"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              picture={companypic}
-              email="support@alsaree3.com"
+              key={startup.id} 
+              name={startup.Company_Name}
+              description={startup.About}
+              businessNature={startup.business_nature}
+              image={startup.img}
+              email={startup.email}
+              website={startup.website}
             />
           ))}
         </div>
         <Stack spacing={2}>
           <Pagination
-            count={10}
+            count={10} 
             sx={{
               padding: "20px 0 40px",
               display: "flex",
@@ -43,7 +72,6 @@ const CardsPage = () => {
       </div>
       <Footer />
     </>
-
   );
 };
 
