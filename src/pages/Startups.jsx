@@ -10,10 +10,11 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const Startups = () => {
   const [startups, setStartups] = useState([]);
 
-
   const fetchStartups = async () => {
     try {
-      const response = await fetch("https://x8ki-letl-twmt.n7.xano.io/api:1cUXcVZQ/startups");
+      const response = await fetch(
+        "https://x8ki-letl-twmt.n7.xano.io/api:1cUXcVZQ/startups"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }
@@ -23,6 +24,9 @@ const Startups = () => {
       console.error("Error fetching data:", error);
     }
   };
+
+  console.log("s", startups);
+
   useEffect(() => {
     fetchStartups();
   }, []);
@@ -66,9 +70,10 @@ const Startups = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {startups.map((startup, index) => (
-          <SwiperSlide key={index}>
+        {startups.map((startup) => (
+          <SwiperSlide key={startup.id}>
             <Card
+              id={startup.id}
               name={startup.Company_Name}
               description={startup.About}
               image={startup.img}

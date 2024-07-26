@@ -41,15 +41,14 @@ const CardsPage = () => {
         </p>
         <div className="cards">
           {startups.map((startup) => (
-            <Link to={`/startupDetails/${startup.id}`}>
-              <div key={startup.id}>
-                <Card
-                  name={startup.Company_Name}
-                  description={startup.About}
-                  image={startup.img}
-                />
-              </div>
-              </Link>
+            <div key={startup.id}>
+              <Card
+                id={startup.id}
+                name={startup.Company_Name}
+                description={startup.About}
+                image={startup.img}
+              />
+            </div>
           ))}
         </div>
         <Stack spacing={2}>

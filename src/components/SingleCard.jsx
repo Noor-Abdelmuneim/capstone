@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-
+import Loading from "./Loading/Loading";
 const SingleCard = () => {
   const { id } = useParams();
   const [companyData, setCompanyData] = useState(null);
@@ -28,7 +28,7 @@ const SingleCard = () => {
     fetchData();
   }, [id]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loading />;
   if (error) return <p>Error: {error.message}</p>;
   if (!companyData) return <p>No data available</p>;
 

@@ -9,9 +9,9 @@ const Card = ({ id, name, description, image }) => {
         <div className="card-content">
           <h2 className="card-title">{name}</h2>
           <p className="card-description">{description.slice(0, 100)}...</p>
-          
+          <Link to={`/startupDetails/${id}`}>
             <button className="startup-button">Read More</button>
-          
+          </Link>
         </div>
       </div>
     </div>
