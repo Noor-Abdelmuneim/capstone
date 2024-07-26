@@ -169,6 +169,7 @@ const RegistrationForm = () => {
             textTransform: "none",
             fontFamily: "Arial, Helvetica, sans-serif",
             fontWeight: "bold",
+            marginBottom:"80px",
           }}
         >
           Submit

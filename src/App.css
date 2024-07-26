@@ -120,42 +120,48 @@
   max-width: 350px;
   max-height: 580px;
   background-color: #ffffff;
-  border-radius: 6%;
+  border-radius: 20px;
   margin: 15px;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e6e6e6;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
+
 .card-container:hover {
   transform: scale(1.05);
   border-color: #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.card-content {
-  padding: 7px 10px 0;
-  text-align: left;
-  max-width: 400px;
-  margin: 0 auto;
+
+.card-image {
+  width: 100%;
+  height: 280px;
+  /* object-fit: cover; */
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
 }
+
+.card-content {
+  padding: 15px;
+}
+
 .card-title {
   color: #565e6d;
   font-size: 1.5rem;
+  margin: 0;
+  text-align: left;
 }
+
 .card-description {
   color: #9095a1;
   font-size: 1rem;
-  margin: 10px 0 5px;
+  margin: 10px 0 0;
   line-height: 1.5;
+  text-align: left;
 }
-.card-image {
-  width: 350px;
-  height: 290px;
-  margin: 0 auto;
-  object-fit: cover;
-  border-radius: 6% 6% 0 0;
-}
+
 .business-nature {
   font-style: italic;
   color: #000000;
@@ -321,10 +327,10 @@
 /* Startup page cards button */
 .startup-button {
   background-color: #007bff;
-  color: #ffffff; 
+  color: #ffffff;
   border: none;
   padding: 10px 15px;
-  text-align: center;
+  margin: 10px 0 0;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -338,7 +344,7 @@
 }
 .visit-button {
   display: inline-block;
-  padding: 7px 17px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -346,7 +352,8 @@
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.1rem;
+  margin: 20px 0;
 }
 
 .visit-button:hover {
@@ -607,7 +614,6 @@ swiper-container {
 
 .single-card-title {
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .single-card-img {
@@ -617,18 +623,18 @@ swiper-container {
 }
 
 .single-card-img img {
-  width: 500px;
+  width: 40%;
   border-radius: 8px;
 }
 
-.single-card-content h3 {
-  margin-top: 10px;
-  font-size: 1.2em;
+.single-card-content h2 {
+  margin: 8px 0;
+  font-size: 1.5em;
 }
 
 .single-card-content p {
   text-align: justify;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 10px;
   max-width: 1200px;
 }
@@ -655,9 +661,6 @@ swiper-container {
   }
   .startups-button {
     margin-top: 30px;
-  }
-  .card-container {
-    height: 550px;
   }
   .header-text {
     font-size: 2.5rem;
@@ -786,9 +789,6 @@ swiper-container {
   .text-container {
     max-width: 390px;
     margin: 0 auto;
-  }
-  .card-container {
-    height: 590px;
   }
 }
 
@@ -943,10 +943,6 @@ swiper-container {
 @media (max-width: 576px) {
   .navbar {
     max-width: 576px;
-  }
-  .hero-container {
-    /* padding: 20px; */
-    height: 110vh;
   }
   .hero-container h1 {
     font-size: 1.7rem;

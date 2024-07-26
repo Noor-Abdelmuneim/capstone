@@ -5,8 +5,7 @@ import PaginationItem from "@mui/material/PaginationItem";
 import Stack from "@mui/material/Stack";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+
 
 const CardsPage = () => {
   const [startups, setStartups] = useState([]);
@@ -31,7 +30,6 @@ const CardsPage = () => {
   }, []);
 
   return (
-    <>
       <div className="startups-container">
         <h1 className="header-cards">Startups in the Iraqi Market</h1>
         <p className="cards-p">
@@ -68,8 +66,6 @@ const CardsPage = () => {
           />
         </Stack>
       </div>
-      <Footer />
-    </>
   );
 };
 

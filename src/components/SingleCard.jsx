@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loading from "./Loading/Loading";
+import Footer from "./Footer";
 const SingleCard = () => {
   const { id } = useParams();
   const [companyData, setCompanyData] = useState(null);
@@ -39,12 +40,12 @@ const SingleCard = () => {
     <div className="single-card" id={id}>
       <div className="single-card-content">
         <div className="single-card-title">
-          <h1> {Company_Name}</h1>
+          <h1 className="header-text"> {Company_Name}</h1>
         </div>
         <div className="single-card-img">
-          <img src={img} width="40%" alt="Company Logo" />
+          <img src={img} alt="Company Logo" />
         </div>
-        <h3>About The Company:</h3>
+        <h2>About The Company:</h2>
         <p>{About}</p>
         <p className="business-nature">{business_nature}</p>
         <a href={`mailto:${email}`} className="email-link">

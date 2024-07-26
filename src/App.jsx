@@ -11,6 +11,7 @@ import { register } from "swiper/element/bundle";
 import IncubatorsPage from "./pages/IncubatorsPage";
 import SingleCard from "./components/SingleCard";
 import StartupDetails from "./pages/StartupDetails";
+import Footer from "./components/Footer";
 register();
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/startup" element={<SingleCard />} />
           <Route path="/startupDetails/:id" element={<StartupDetails />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
