@@ -150,9 +150,10 @@
   line-height: 1.5;
 }
 .card-image {
-  width: 100%;
+  width: 350px;
   height: 290px;
   margin: 0 auto;
+  object-fit: cover;
   border-radius: 6% 6% 0 0;
 }
 .business-nature {

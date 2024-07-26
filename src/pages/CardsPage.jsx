@@ -6,10 +6,10 @@ import Stack from "@mui/material/Stack";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const CardsPage = () => {
   const [startups, setStartups] = useState([]);
-
 
   const fetchData = async () => {
     try {
@@ -29,7 +29,6 @@ const CardsPage = () => {
   useEffect(() => {
     fetchData();
   }, []);
-  
 
   return (
     <>
@@ -42,17 +41,20 @@ const CardsPage = () => {
         </p>
         <div className="cards">
           {startups.map((startup) => (
-            <Card
-              key={startup.id} 
-              name={startup.Company_Name}
-              description={startup.About}
-              image={startup.img}
-            />
+            <Link to={`/startupDetails/${startup.id}`}>
+              <div key={startup.id}>
+                <Card
+                  name={startup.Company_Name}
+                  description={startup.About}
+                  image={startup.img}
+                />
+              </div>
+              </Link>
           ))}
         </div>
         <Stack spacing={2}>
           <Pagination
-            count={10} 
+            count={10}
             sx={{
               padding: "20px 0 40px",
               display: "flex",
