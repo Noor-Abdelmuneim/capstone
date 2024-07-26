@@ -10,19 +10,18 @@ import {
   FormControl,
   FormHelperText,
 } from "@mui/material";
-import { styled } from '@mui/material/styles';
-import CloudUploadIcon from '@mui/icons-material/CloudUpload';
+import { styled } from "@mui/material/styles";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 
-
-const VisuallyHiddenInput = styled('input')({
-  clip: 'rect(0 0 0 0)',
-  clipPath: 'inset(50%)',
+const VisuallyHiddenInput = styled("input")({
+  clip: "rect(0 0 0 0)",
+  clipPath: "inset(50%)",
   height: 1,
-  overflow: 'hidden',
-  position: 'absolute',
+  overflow: "hidden",
+  position: "absolute",
   bottom: 0,
   left: 0,
-  whiteSpace: 'nowrap',
+  whiteSpace: "nowrap",
   width: 1,
 });
 
@@ -43,7 +42,6 @@ const RegistrationForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-
     const errors = {
       companyName: !companyName,
       email: !email,
@@ -52,7 +50,6 @@ const RegistrationForm = () => {
     };
 
     setFormErrors(errors);
-
 
     if (Object.values(errors).some((error) => error)) {
       return;
@@ -65,7 +62,7 @@ const RegistrationForm = () => {
       website,
       howDidYouHear,
     });
-    // backend API 
+    // backend API
   };
 
   return (
@@ -102,7 +99,9 @@ const RegistrationForm = () => {
               value={aboutCompany}
               onChange={(e) => setAboutCompany(e.target.value)}
               error={formErrors.aboutCompany}
-              helperText={formErrors.aboutCompany && "About Company is required"}
+              helperText={
+                formErrors.aboutCompany && "About Company is required"
+              }
             />
           </Grid>
           <Grid item xs={12}>
@@ -136,7 +135,9 @@ const RegistrationForm = () => {
                 </MenuItem>
                 <MenuItem value="Website">Website</MenuItem>
                 <MenuItem value="Social Media">Social Media</MenuItem>
-                <MenuItem value="Friend or Colleague">Friend or Colleague</MenuItem>
+                <MenuItem value="Friend or Colleague">
+                  Friend or Colleague
+                </MenuItem>
                 <MenuItem value="Other">Other</MenuItem>
               </Select>
               {formErrors.howDidYouHear && (
@@ -169,7 +170,7 @@ const RegistrationForm = () => {
             textTransform: "none",
             fontFamily: "Arial, Helvetica, sans-serif",
             fontWeight: "bold",
-            marginBottom:"80px",
+            marginBottom: "80px",
           }}
         >
           Submit

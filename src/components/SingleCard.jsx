@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loading from "./Loading/Loading";
-import Footer from "./Footer";
+
 const SingleCard = () => {
   const { id } = useParams();
   const [companyData, setCompanyData] = useState(null);
@@ -30,7 +30,7 @@ const SingleCard = () => {
   }, [id]);
 
   if (loading) return <Loading />;
-  if (error) return <p>Error: {error.message}</p>;
+  if (error) return <Loading />;
   if (!companyData) return <p>No data available</p>;
 
   const { Company_Name, About, email, website, business_nature, img } =
