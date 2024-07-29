@@ -7,9 +7,11 @@ import Investors from "./pages/Investors";
 import CardsPage from "./pages/CardsPage";
 import SignUp from "./pages/SignUp";
 import Incubators from "./pages/Incubators";
-import { register } from 'swiper/element/bundle';
+import { register } from "swiper/element/bundle";
 import IncubatorsPage from "./pages/IncubatorsPage";
-import SingleCard from "./pages/SingleCard";
+import SingleCard from "./components/SingleCard";
+import StartupDetails from "./pages/StartupDetails";
+import Footer from "./components/Footer";
 register();
 
 function App() {
@@ -26,7 +28,9 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/incubatorsPage" element={<IncubatorsPage />} />
           <Route path="/startup" element={<SingleCard />} />
+          <Route path="/startupDetails/:id" element={<StartupDetails />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
