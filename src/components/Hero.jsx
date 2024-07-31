@@ -30,7 +30,7 @@ const Hero = () => {
                     textTransform: "none",
                     fontFamily: "Arial, Helvetica, sans-serif",
                     fontWeight: "bold",
-                    fontSize:"1.1rem",
+                    fontSize: "1.1rem",
                     "&:hover": {
                       backgroundColor: "#007bff3",
                       boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
@@ -51,7 +51,7 @@ const Hero = () => {
                     color: "#1769AA",
                     fontFamily: "Arial, Helvetica, sans-serif",
                     fontWeight: "700",
-                    fontSize:"1.1rem",
+                    fontSize: "1.1rem",
                     "&:hover": {
                       backgroundColor: "#007bff3",
                       boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",

@@ -25,6 +25,10 @@
   color: #1769aa;
 }
 
+/* .css-16rux3o-MuiButtonBase-root-MuiButton-root{
+  transition:none !important;
+} */
+
 /* Navbar */
 
 .navbar {
@@ -514,7 +518,7 @@ swiper-container {
   width: 100%;
   background: #1769aa;
   min-height: 100px;
-  padding: 20px 50px;
+  padding: 40px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,7 +559,7 @@ swiper-container {
 }
 .up-btn {
   position: absolute;
-  top: -121px;
+  top: -30px;
   z-index: 1000;
   cursor: pointer;
 }
