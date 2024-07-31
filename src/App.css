@@ -518,11 +518,14 @@ swiper-container {
   width: 100%;
   background: #1769aa;
   min-height: 100px;
-  padding: 40px 50px;
+  padding: 20px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.footer-logo{
+  margin: 15px 0 7px;
 }
 
 .logo,
