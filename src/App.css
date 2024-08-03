@@ -523,7 +523,7 @@ swiper-container {
   align-items: center;
   flex-direction: column;
 }
-.footer-logo{
+.footer-logo {
   margin: 15px 0 7px;
 }
 
@@ -1063,10 +1063,10 @@ swiper-container {
   .cards-p {
     font-size: 1.1rem;
   }
-  .swiper-button-prev{
+  .swiper-button-prev {
     display: none;
   }
-  .swiper-button-next{
+  .swiper-button-next {
     display: none;
   }
 }
