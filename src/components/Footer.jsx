@@ -14,13 +14,14 @@ const Footer = () => {
     <body>
       <footer class="footer">
         <div className="up-btn">
-        <Link>
-          <img
-          src={UpBtn}
-          width={"55px"}
-          alt="btn"
-            onClick={scrollToTop}
-          />
+          <Link>
+            <img
+              src={UpBtn}
+              width={"55px"}
+              height={"53px"}
+              alt="btn"
+              onClick={scrollToTop}
+            />
           </Link>
         </div>
         <div class="footer-logo">

@@ -11,6 +11,8 @@ const CardsPage = () => {
   const [startups, setStartups] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
 
   const fetchData = async () => {
     try {
@@ -33,9 +35,19 @@ const CardsPage = () => {
     fetchData();
   }, []);
 
+  const totalPages = Math.ceil(startups.length / itemsPerPage);
+
+  const handlePageChange = (event, value) => {
+    setCurrentPage(value);
+  };
+
   if (loading) return <Loading />;
   if (error) return <Loading />;
-  if (!startups) return <p>No data available</p>;
+  if (!startups.length) return <p>No data available</p>;
+
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const currentStartups = startups.slice(startIndex, startIndex + itemsPerPage);
 
   return (
     <div className="startups-container">
@@ -46,7 +58,7 @@ const CardsPage = () => {
         Iraq's dynamic business landscape and promising future.
       </p>
       <div className="cards">
-        {startups.map((startup) => (
+        {currentStartups.map((startup) => (
           <div key={startup.id}>
             <Card
               id={startup.id}
@@ -59,7 +71,9 @@ const CardsPage = () => {
       </div>
       <Stack spacing={2}>
         <Pagination
-          count={10}
+          count={totalPages}
+          page={currentPage}
+          onChange={handlePageChange}
           sx={{
             padding: "20px 0 40px",
             display: "flex",
