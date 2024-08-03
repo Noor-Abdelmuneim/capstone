@@ -31,6 +31,7 @@ const RegistrationForm = () => {
   const [email, setEmail] = useState("");
   const [website, setWebsite] = useState("");
   const [howDidYouHear, setHowDidYouHear] = useState("");
+  const [logo, setLogo] = useState(null);
   const [formErrors, setFormErrors] = useState({
     companyName: false,
     email: false,
@@ -39,47 +40,63 @@ const RegistrationForm = () => {
   });
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    // event.preventDefault();
 
-    const errors = {
-      companyName: !companyName,
-      email: !email,
-      aboutCompany: !aboutCompany,
-      howDidYouHear: !howDidYouHear,
-    };
+    console.log(event);
+    console.log(formErrors);
+    console.log({
+      company_name: companyName,
+      about: aboutCompany,
+      email: email,
+      logo: logo,
+    });
+    // const errors = {
+    //   companyName: !companyName,
+    //   email: !email,
+    //   aboutCompany: !aboutCompany,
+    //   howDidYouHear: !howDidYouHear,
+    // };
 
-    setFormErrors(errors);
+    // setFormErrors(errors);
 
-    if (Object.values(errors).some((error) => error)) {
-      return;
-    }
+    // if (Object.values(errors).some((error) => error)) {
+    //   return;
+    // }
 
-    try {
-      const response = await fetch("https://x8ki-letl-twmt.n7.xano.io/api:1cUXcVZQ/startups", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          company_name: companyName,
-          about: aboutCompany,
-          email: email,
-          website: website,
-          company_logo: "", 
-        }),
-      });
+    let formData = new FormData();
+    formData.append("company_name", companyName);
+    formData.append("about", aboutCompany);
+    formData.append("business_nature", "");
+    formData.append("email", email);
+    formData.append("website", website);
+    formData.append("img", "");
+    formData.append("logo");
+    console.log(formData);
+    // try {
+    //   console.log(formData);
+    //   // const response = await fetch("https://x8ki-letl-twmt.n7.xano.io/api:1cUXcVZQ/startups", {
+    //   //   method: "POST",
+    //   //   headers: {
+    //   //     "Content-Type": "multipart/form-data",
+    //   //   },
+    //   //   body: JSON.stringify({
+    //   //     company_name: companyName,
+    //   //     about: aboutCompany,
+    //   //     email: email,
+    //   //     website: website,
+    //   //     company_logo: "",
+    //   //   }),
+    //   // });
 
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
+    //   // if (!response.ok) {
+    //   //   throw new Error("Network response was not ok");
+    //   // }
 
-      const result = await response.json();
-      console.log("Success:", result);
-
-    } catch (error) {
-      console.error("Error:", error);
-
-    }
+    //   // const result = await response.json();
+    //   // console.log("Success:", result);
+    // } catch (error) {
+    //   console.error("Error:", error);
+    // }
   };
 
   return (
@@ -116,7 +133,9 @@ const RegistrationForm = () => {
               value={aboutCompany}
               onChange={(e) => setAboutCompany(e.target.value)}
               error={formErrors.aboutCompany}
-              helperText={formErrors.aboutCompany && "About Company is required"}
+              helperText={
+                formErrors.aboutCompany && "About Company is required"
+              }
             />
           </Grid>
           <Grid item xs={12}>
@@ -181,6 +200,8 @@ const RegistrationForm = () => {
           type="submit"
           variant="contained"
           color="primary"
+          value={logo}
+          onChange={(e) => setLogo(e.target.value)}
           style={{
             textTransform: "none",
             fontFamily: "Arial, Helvetica, sans-serif",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import UpBtn from "../photos/up-arrow.png"
+import UpBtn from "../photos/up-arrow.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -11,8 +11,8 @@ const Footer = () => {
   };
 
   return (
-    <body>
-      <footer class="footer">
+    <div>
+      <footer className="footer">
         <div className="up-btn">
           <Link>
             <img
@@ -24,7 +24,7 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div class="footer-logo">
+        <div className="footer-logo">
           <Link to="/">
             <svg
               width="109"
@@ -100,7 +100,7 @@ const Footer = () => {
             </svg>
           </Link>
         </div>
-        <ul class="menu">
+        <ul className="menu">
           <li>
             <Link to="/" className="menu__link">
               Home
@@ -124,7 +124,7 @@ const Footer = () => {
         </ul>
         <p>&copy;2024 Iraqi Startup Hub | All Rights Reserved</p>
       </footer>
-    </body>
+    </div>
   );
 };
 
