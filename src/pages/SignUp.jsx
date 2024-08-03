@@ -34,19 +34,18 @@ const RegistrationForm = () => {
   const [formErrors, setFormErrors] = useState({
     companyName: false,
     email: false,
-    phone: false,
-    businessNature: false,
+    aboutCompany: false,
     howDidYouHear: false,
   });
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const errors = {
       companyName: !companyName,
       email: !email,
-      howDidYouHear: !howDidYouHear,
       aboutCompany: !aboutCompany,
+      howDidYouHear: !howDidYouHear,
     };
 
     setFormErrors(errors);
@@ -55,14 +54,32 @@ const RegistrationForm = () => {
       return;
     }
 
-    console.log({
-      companyName,
-      aboutCompany,
-      email,
-      website,
-      howDidYouHear,
-    });
-    // backend API
+    try {
+      const response = await fetch("https://x8ki-letl-twmt.n7.xano.io/api:1cUXcVZQ/startups", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          company_name: companyName,
+          about: aboutCompany,
+          email: email,
+          website: website,
+          company_logo: "", 
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const result = await response.json();
+      console.log("Success:", result);
+
+    } catch (error) {
+      console.error("Error:", error);
+
+    }
   };
 
   return (
@@ -99,9 +116,7 @@ const RegistrationForm = () => {
               value={aboutCompany}
               onChange={(e) => setAboutCompany(e.target.value)}
               error={formErrors.aboutCompany}
-              helperText={
-                formErrors.aboutCompany && "About Company is required"
-              }
+              helperText={formErrors.aboutCompany && "About Company is required"}
             />
           </Grid>
           <Grid item xs={12}>
