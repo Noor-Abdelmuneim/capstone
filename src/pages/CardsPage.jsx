@@ -41,10 +41,13 @@ const CardsPage = () => {
     setCurrentPage(value);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
+
   if (loading) return <Loading />;
   if (error) return <Loading />;
   if (!startups.length) return <p>No data available</p>;
-
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentStartups = startups.slice(startIndex, startIndex + itemsPerPage);
