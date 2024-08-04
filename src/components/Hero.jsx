@@ -20,7 +20,7 @@ const Hero = () => {
           </p>
           <div className="hero-btns">
             <Stack spacing={1.5} direction={{ xs: "column", sm: "row" }}>
-              <Link to="/startups">
+              <Link to="/cardsPage">
                 <Button
                   variant="contained"
                   sx={{
