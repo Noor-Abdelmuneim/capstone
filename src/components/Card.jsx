@@ -8,7 +8,7 @@ const Card = ({ id, name, description, image }) => {
         <img src={image} alt={name} className="card-image" />
         <div className="card-content">
           <h2 className="card-title">{name}</h2>
-          <p className="card-description">{description.slice(0, 100)}...</p>
+          <p className="card-description">{description.slice(0, 50)}...</p>
           <Link to={`/startupDetails/${id}`}>
             <button className="startup-button">Read More</button>
           </Link>
