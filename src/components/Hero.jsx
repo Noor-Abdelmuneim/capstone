@@ -29,7 +29,7 @@ const Hero = () => {
                     backgroundColor: "#1769AA",
                     textTransform: "none",
                     fontFamily: "Arial, Helvetica, sans-serif",
-                    fontWeight: "bold",
+                    fontWeight: "700",
                     fontSize: "1.1rem",
                     "&:hover": {
                       backgroundColor: "#007bff3",
