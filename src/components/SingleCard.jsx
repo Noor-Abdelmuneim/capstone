@@ -45,9 +45,10 @@ const SingleCard = () => {
         <div className="single-card-img">
           <img src={company_logo.url} alt="Company Logo" />
         </div>
-        <h2>About The Company:</h2>
-        <p>{about}</p>
         <p className="business-nature">{business_nature}</p>
+        <h2>About Company</h2>
+        <p>{about}</p>
+       
         <a href={`mailto:${email}`} className="email-link">
           <p className="email">{email}</p>
         </a>
