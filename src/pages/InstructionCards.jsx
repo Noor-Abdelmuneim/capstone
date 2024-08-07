@@ -20,7 +20,7 @@ const InstructionCards = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                     >
-                        <g clip-path="url(#clip0_208_219)">
+                        <g clipPath="url(#clip0_208_219)">
                             <path
                                 d="M68.6408 20.9291C69.6701 18.3265 71.8896 16.7837 73.5964 17.4802C75.3031 18.1767 75.8534 20.8542 74.8241 23.4567C74.4273 24.5015 73.7798 25.4302 72.9302 26.1642L68.4237 37.1286L63.1575 34.7732L68.158 24.2132C68.0457 23.086 68.2104 21.9589 68.6371 20.9253L68.6408 20.9291Z"
                                 fill="#A0616A"
@@ -196,7 +196,7 @@ const InstructionCards = () => {
                             xmlns="http://www.w3.org/2000/svg"
                             
                         >
-                            <g clip-path="url(#clip0_208_262)">
+                            <g clipPath="url(#clip0_208_262)">
                                 <path
                                     d="M0 185.671C0 186.003 0.377375 186.268 0.849976 186.268H334.15C334.619 186.268 335 186.003 335 185.671C335 185.34 334.623 185.075 334.15 185.075H0.849976C0.380902 185.075 0 185.34 0 185.671Z"
                                     fill="#2F2E43"
@@ -343,7 +343,7 @@ const InstructionCards = () => {
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
-                            <g clip-path="url(#clip0_208_299)">
+                            <g clipPath="url(#clip0_208_299)">
                                 <path
                                     d="M155.002 17.0877H23.2723C18.44 17.0877 14.5106 21.0171 14.5106 25.8494V116.12C14.5106 120.953 18.44 124.882 23.2723 124.882H155.002C159.835 124.882 163.764 120.953 163.764 116.12V25.8494C163.764 21.0171 159.835 17.0877 155.002 17.0877Z"
                                     fill="#F2F2F2"
@@ -473,8 +473,8 @@ const InstructionCards = () => {
                         </svg>
                     </div>
                     <div className="cards-text">
-                        <h1 className="inst-header">{"Application Review"}</h1>
-                        <p className="instructions-p">{"We'll review your application carefully to ensure it meets our platform's listing criteria."}</p>
+                        <h1 className="inst-header">{"The company was added successfully"}</h1>
+                        <p className="instructions-p">{"Your startup will be added to our startup page, and everyone will have the ability to view its information."}</p>
                     </div>
                 </div>
             </div>

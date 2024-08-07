@@ -12,6 +12,7 @@ import IncubatorsPage from "./pages/IncubatorsPage";
 import SingleCard from "./components/SingleCard";
 import StartupDetails from "./pages/StartupDetails";
 import Footer from "./components/Footer";
+
 register();
 
 function App() {

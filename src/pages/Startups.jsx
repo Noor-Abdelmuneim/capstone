@@ -25,8 +25,6 @@ const Startups = () => {
     }
   };
 
-  console.log("s", startups);
-
   useEffect(() => {
     fetchStartups();
   }, []);
@@ -74,9 +72,9 @@ const Startups = () => {
           <SwiperSlide key={startup.id}>
             <Card
               id={startup.id}
-              name={startup.Company_Name}
-              description={startup.About}
-              image={startup.img}
+              name={startup.company_name}
+              description={startup.about}
+              image={startup.company_logo.url}
             />
           </SwiperSlide>
         ))}

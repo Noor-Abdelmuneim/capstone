@@ -130,7 +130,7 @@ const Navbar = () => {
                   textTransform: "none",
                   color: "#1769AA",
                   fontFamily: "Arial, Helvetica, sans-serif",
-                  fontWeight: "bold",
+                  fontWeight: "700",
                   "&:hover": {
                     backgroundColor: "#007bff3",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import UpBtn from "../photos/up-arrow.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -10,69 +11,20 @@ const Footer = () => {
   };
 
   return (
-    <body>
-      <footer class="footer">
+    <div>
+      <footer className="footer">
         <div className="up-btn">
-          <svg
-            onClick={scrollToTop}
-            width="252"
-            height="150"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g filter="url(#filter0_d_209_779)">
-              <ellipse
-                cx="125.691"
-                cy="120"
-                rx="25.6909"
-                ry="24"
-                fill="white"
-              />
-            </g>
-            <path
-              d="M126.71 107.878C125.929 107.097 124.662 107.097 123.881 107.878L111.153 120.606C110.372 121.387 110.372 122.653 111.153 123.434C111.935 124.215 113.201 124.215 113.982 123.434L125.296 112.121L136.609 123.434C137.39 124.215 138.657 124.215 139.438 123.434C140.219 122.653 140.219 121.387 139.438 120.606L126.71 107.878ZM127.296 130.708L127.296 109.292L123.296 109.292L123.296 130.708L127.296 130.708Z"
-              fill="#BDBDBD"
+          <Link>
+            <img
+              src={UpBtn}
+              width={"55px"}
+              height={"53px"}
+              alt="btn"
+              onClick={scrollToTop}
             />
-            <defs>
-              <filter
-                id="filter0_d_209_779"
-                x="0"
-                y="0"
-                width="251.382"
-                height="248"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
-                />
-                <feOffset dy="4" />
-                <feGaussianBlur stdDeviation="50" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_209_779"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_209_779"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
+          </Link>
         </div>
-        <div class="logo">
+        <div className="footer-logo">
           <Link to="/">
             <svg
               width="109"
@@ -148,7 +100,7 @@ const Footer = () => {
             </svg>
           </Link>
         </div>
-        <ul class="menu">
+        <ul className="menu">
           <li>
             <Link to="/" className="menu__link">
               Home
@@ -172,7 +124,7 @@ const Footer = () => {
         </ul>
         <p>&copy;2024 Iraqi Startup Hub | All Rights Reserved</p>
       </footer>
-    </body>
+    </div>
   );
 };
 
