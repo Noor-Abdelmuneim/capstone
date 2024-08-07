@@ -18,7 +18,7 @@ const Hero = () => {
             forward-thinking investors and gain access to exclusive
             opportunities that can transform your investment portfolio.
           </p>
-          <div class="hero-btns">
+          <div className="hero-btns">
             <Link to="/cardsPage">
               <button className="btn btn-contained">Startups</button>
             </Link>

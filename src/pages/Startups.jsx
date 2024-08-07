@@ -25,8 +25,6 @@ const Startups = () => {
     }
   };
 
-  console.log("s", startups);
-
   useEffect(() => {
     fetchStartups();
   }, []);

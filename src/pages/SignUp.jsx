@@ -120,7 +120,6 @@ const RegistrationForm = () => {
       }
 
       const result = await response.json();
-      console.log("Success:", result);
 
       setCompanyName("");
       setAboutCompany("");
