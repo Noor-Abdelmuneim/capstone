@@ -473,8 +473,8 @@ const InstructionCards = () => {
                         </svg>
                     </div>
                     <div className="cards-text">
-                        <h1 className="inst-header">{"Application Review"}</h1>
-                        <p className="instructions-p">{"We'll review your application carefully to ensure it meets our platform's listing criteria."}</p>
+                        <h1 className="inst-header">{"The company was added successfully"}</h1>
+                        <p className="instructions-p">{"Your startup will be added to our startup page, and everyone will have the ability to view its information."}</p>
                     </div>
                 </div>
             </div>

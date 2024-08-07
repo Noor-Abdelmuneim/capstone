@@ -18,50 +18,13 @@ const Hero = () => {
             forward-thinking investors and gain access to exclusive
             opportunities that can transform your investment portfolio.
           </p>
-          <div className="hero-btns">
-            <Stack spacing={1.5} direction={{ xs: "column", sm: "row" }}>
-              <Link to="/cardsPage">
-                <Button
-                  variant="contained"
-                  sx={{
-                    borderRadius: "20px",
-                    padding: "18px 77px",
-                    backgroundColor: "#1769AA",
-                    textTransform: "none",
-                    fontFamily: "Arial, Helvetica, sans-serif",
-                    fontWeight: "700",
-                    fontSize: "1.1rem",
-                    "&:hover": {
-                      backgroundColor: "#007bff3",
-                      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                    },
-                  }}
-                >
-                  Startups
-                </Button>
-              </Link>
-              <Link to="/signup">
-                <Button
-                  variant="outlined"
-                  sx={{
-                    borderRadius: "20px",
-                    padding: "17px 39px",
-                    border: "3px solid #1769AA",
-                    textTransform: "none",
-                    color: "#1769AA",
-                    fontFamily: "Arial, Helvetica, sans-serif",
-                    fontWeight: "700",
-                    fontSize: "1.1rem",
-                    "&:hover": {
-                      backgroundColor: "#007bff3",
-                      boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-                    },
-                  }}
-                >
-                  Register with Us
-                </Button>
-              </Link>
-            </Stack>
+          <div class="hero-btns">
+            <Link to="/cardsPage">
+              <button className="btn btn-contained">Startups</button>
+            </Link>
+            <Link to="/signup">
+              <button className="btn btn-outlined">Register with Us</button>
+            </Link>
           </div>
         </div>
         <img src={building} alt="building" className="hero-image" />
