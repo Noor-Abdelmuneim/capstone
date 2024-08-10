@@ -292,7 +292,7 @@
   margin: 0 auto;
 }
 .cards-text {
-  max-width: 700px;
+  max-width: 800px;
   padding-top: 40px;
 }
 
@@ -1020,7 +1020,7 @@ swiper-container {
   .cards-container {
     width: 100%;
     max-width: 400px;
-    /* margin: 15px auto; */
+    height: 520px;
   }
   .inv-logo {
     width: 150px;
