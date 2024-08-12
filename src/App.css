@@ -354,7 +354,7 @@
 }
 .email {
   margin: 0;
-  font-size: 16px;
+  font-size: 1.2rem;
   padding-top: 10px;
   font-weight: bold;
 }
@@ -688,44 +688,42 @@ swiper-container {
 }
 
 /* sigle card page */
+
 .single-card {
-  width: 80%;
+  display: flex;
+  justify-content: center;
   margin: 20px auto;
-  padding: 20px;
+  padding: 80px;
 }
 
-.single-card-content {
+.single-card-content { 
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.single-card-title {
-  text-align: center;
+  align-items: left;
 }
 
 .single-card-img {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  width: 300px;
+  padding: 30px;
 }
 
 .single-card-img img {
-  width: 350px;
-  border-radius: 8px;
+  max-width: 100%;
+  width: 450px;
+  border-radius: 10%;
+  /* padding: 30px; */
 }
-
+.single-card-content p {
+  text-align: justify;
+  line-height: 1.7;
+  margin: 10px 0;
+  max-width: 500px;
+}
 .single-card-content h2 {
   margin: 8px 0;
   font-size: 1.5em;
 }
 
-.single-card-content p {
-  text-align: justify;
-  line-height: 1.7;
-  margin-bottom: 10px;
-  max-width: 800px;
-}
 
 @media screen and (max-width: 1200px) {
   .hero-container {
@@ -788,6 +786,9 @@ swiper-container {
   }
   .instruction-content {
     max-width: 900px;
+  }
+  .single-card-img img {
+    width: 300px;
   }
 }
 
@@ -881,6 +882,7 @@ swiper-container {
     max-width: 390px;
     margin: 0 auto;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1034,13 +1036,25 @@ swiper-container {
   .inv-logo img {
     max-width: 110px;
   }
-  .single-card-img img {
-    width: 260px;
-    border-radius: 8px;
-  }
   .startups-button{
     padding: 13px 50px;
     border-radius: 10px;
+  }
+  .single-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .single-card-img {
+    margin-top: 20px;
+    max-width: 80%;
+  }
+  .single-card-content p{
+    max-width: 300px;
+    text-align: center;
   }
 }
 
