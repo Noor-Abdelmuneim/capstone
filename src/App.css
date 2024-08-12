@@ -226,6 +226,10 @@
   line-height: 1.5;
   text-align: left;
 }
+.startup-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .business-nature {
   font-style: italic;
@@ -236,7 +240,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -393,7 +397,7 @@
 
 /* Startup page cards button */
 .startup-button {
-  background-color: #007bff;
+  background-color: #1769aa;
   color: #ffffff;
   border: none;
   padding: 10px 15px;
