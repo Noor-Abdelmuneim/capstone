@@ -201,8 +201,9 @@
 
 .card-image {
   /* max-width: 100%; */
-  width: 100%;
-  height: 250px;
+  /* width: 100%;
+  height: 250px; */
+  aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
 }
@@ -463,9 +464,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #f5f5f5;
   padding: 20px;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -696,7 +695,7 @@ swiper-container {
   padding: 80px;
 }
 
-.single-card-content { 
+.single-card-content {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -723,7 +722,6 @@ swiper-container {
   margin: 8px 0;
   font-size: 1.5em;
 }
-
 
 @media screen and (max-width: 1200px) {
   .hero-container {
@@ -882,7 +880,6 @@ swiper-container {
     max-width: 390px;
     margin: 0 auto;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -984,14 +981,14 @@ swiper-container {
   .hero-btns {
     display: flex;
     justify-content: center;
-    margin-top: -9px; 
+    margin-top: -9px;
   }
 
   .hero-btns .btn {
     padding: 13px 50px;
     border-radius: 10px;
   }
-  
+
   .hero-btns .btn-outlined {
     padding: 12px 15px;
   }
@@ -1022,6 +1019,7 @@ swiper-container {
   }
   .card-wrapper {
     grid-template-columns: 1fr;
+    max-width: 400px;
   }
   .cards-container {
     width: 100%;
@@ -1036,25 +1034,9 @@ swiper-container {
   .inv-logo img {
     max-width: 110px;
   }
-  .startups-button{
+  .startups-button {
     padding: 13px 50px;
     border-radius: 10px;
-  }
-  .single-card {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex-direction: column-reverse;
-    padding: 0;
-  }
-
-  .single-card-img {
-    margin-top: 20px;
-    max-width: 80%;
-  }
-  .single-card-content p{
-    max-width: 300px;
-    text-align: center;
   }
 }
 
@@ -1214,6 +1196,7 @@ swiper-container {
   }
   .card-wrapper {
     margin: 0;
+    max-width: 300px;
   }
   .header-text {
     font-size: 1.5rem;
