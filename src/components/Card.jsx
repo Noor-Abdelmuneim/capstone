@@ -13,9 +13,11 @@ const Card = ({ id, name, description = "", image }) => {
         <div className="card-content">
           <h2 className="card-title">{name}</h2>
           <p className="card-description">{truncatedDescription}</p>
+          <div className="startup-button-container">
           <Link to={`/startupDetails/${id}`}>
             <button className="startup-button">Read More</button>
           </Link>
+          </div>
         </div>
       </div>
     </div>

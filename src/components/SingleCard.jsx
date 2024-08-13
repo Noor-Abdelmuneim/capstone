@@ -39,22 +39,19 @@ const SingleCard = () => {
   return (
     <div className="single-card" id={id}>
       <div className="single-card-content">
-        <div className="single-card-title">
-          <h1 className="header-text"> {company_name}</h1>
-        </div>
-        <div className="single-card-img">
-          <img src={company_logo.url} alt="Company Logo" />
-        </div>
+        <h1 className="header-text">{company_name}</h1>
         <p className="business-nature">{business_nature}</p>
         <h2>About Company</h2>
         <p>{about}</p>
-       
         <a href={`mailto:${email}`} className="email-link">
           <p className="email">{email}</p>
         </a>
         <Link to={website} target="_blank" rel="noopener noreferrer">
           <button className="visit-button">Visit Website</button>
         </Link>
+      </div>
+      <div className="single-card-img">
+        <img src={company_logo.url} alt="Company Logo" />
       </div>
     </div>
   );
